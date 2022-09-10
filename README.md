@@ -16,3 +16,9 @@ The following are some mini projects I completed
     Language used: Java, JSP, JS, HTML, CSS
     Framework: Struts 2
     Database: MySQL
+4. TourPubg
+    This is an online tournament web application project build by using Struts2 framework 
+    with Java and also used Redis for better performance.
+    Language used: Java, JS, HTML, CSS
+    Framework: Struts 2, Redis
+    Database: MySQL
