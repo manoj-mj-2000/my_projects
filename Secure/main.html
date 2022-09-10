@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Message</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="http://www.pngmart.com/files/7/Security-PNG-Transparent.png">
+<style type="text/css">
+
+body
+{
+  background:black;
+  font-family: 'Ubuntu', sans-serif;
+}
+* {box-sizing: border-box;}
+img {vertical-align: middle;}
+.stick
+{
+  width:100%;
+  height:100px;
+  position: sticky;
+  top:0;
+  margin:auto;
+  background: #6d90a3;
+  display:flex;
+}
+.stick > div
+{
+  margin:auto;
+  width:8%;
+  height:100%;
+}
+.secure-main
+{
+  width:1275px;
+  margin:auto;
+  background:white;
+}
+.stick-ico
+{
+  background-image: url(https://cdn.haproxy.com/wp-content/uploads/2018/07/KB-Security--e1533820237622.png);
+  background-position: left;
+  background-size:200% 100%;
+}
+.stick-head
+{
+  color:white;
+  padding:4%;
+}
+.ul
+{
+  color:white;
+  list-style-type:none;
+  margin-right:5%;
+}
+.li{
+  float:right;
+  padding:3% 3% 3% 3%;
+  font-size: 20px;
+}
+.to-bottom {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.5s;
+  cursor:pointer;
+}
+.to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #27b8d1;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.to-bottom:hover {
+  color: white;
+}
+.to-bottom:hover:before {
+  transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0,1.7,1,.57);
+}  
+.head
+{
+  border: 1px solid transparent;
+width: 100%;
+height: 100px;
+text-shadow: 3px 3px 20px #000, 3px 3px 20px #000;
+color: white;
+background: linear-gradient(to top,rgb(81, 161, 251),rgb(255,255,255),rgb(81, 161, 251));
+background-attachment: fixed;
+}
+.img
+{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-size: cover;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bfa9cee-df94-40cf-a39d-05c0b557f0d3/d9bhf65-759c53d2-69ac-49d6-836c-db6b5c15a220.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiZmE5Y2VlLWRmOTQtNDBjZi1hMzlkLTA1YzBiNTU3ZjBkM1wvZDliaGY2NS03NTljNTNkMi02OWFjLTQ5ZDYtODM2Yy1kYjZiNWMxNWEyMjAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.s3xGk0N-4-K3UhMsJJE5gUA99MRCxnAxBbJokjJyVJM); 
+}
+
+
+.con-main
+{
+  border: 1px solid transparent;
+  height: 450px;
+  display: flex;
+  background: linear-gradient(to top,rgb(255,255,255),rgb(81, 161, 251),rgb(255,255,255));
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+.con-main > div
+{
+  border: 5px solid #6d90a3;
+  width: 32%;
+  height: 85%;
+  margin: auto;
+  border-radius: 30px;
+  transition-duration: 0.5s;
+}
+.con-main > div:hover
+{
+  box-shadow: 0px 0px 15px 6px #000;
+  border-color: white;
+}
+#text
+{
+resize: none;
+margin: 5%;
+width: 90%;
+height: 90%;
+border-radius: 30px;
+border: 0.5px solid;
+padding: 5%;
+font-size: x-large;
+}
+#demo
+{
+  resize: none;
+margin: 5%;
+width: 90%;
+height: 90%;
+border-radius: 30px;
+border: 0.5px solid;
+padding: 5%;
+font-size: x-large; 
+}
+select
+{
+margin-top: 30%;
+
+width: 70%;
+
+height: 50px;
+
+font-size: 20px;
+
+text-align: center;
+
+border: 4px solid #6d90a3;
+
+border-radius: 10px;
+
+background: transparent;
+
+-webkit-appearance: none;
+transition-duration: 0.5s;
+
+}
+select:hover
+{
+  background-color: #6d90a3;
+  color: white;
+}
+button:hover
+{
+  background-color: #6d90a3;
+  color: white; 
+}
+
+button
+{
+  transition-duration: 0.5s;
+margin-top: 8%;
+
+width: 70%;
+
+height: 50px;
+
+font-size: 20px;
+
+text-align: center;
+
+border: 4px solid #6d90a3;
+
+border-radius: 10px;
+
+background: transparent; 
+}
+.note
+{
+  border: 1px solid transparent;
+width: 100%;
+height: 150px;
+background: linear-gradient(to top,rgb(81, 161, 251),rgb(255,255,255),rgb(81, 161, 251));
+background-attachment: fixed;  
+}
+.pnote
+{
+font-size: 15px;
+margin-top: 4%;
+/*border: 1px solid*/;
+padding: 10px;
+}
+.last
+{
+width: 100%;
+height: 120px;
+background: linear-gradient(to top,rgb(255,255,255),rgb(66,135,255),rgb(255,255,255));
+background-attachment: fixed;
+}
+
+
+</style>
+</head>
+<body onload='clear()'  oncontextmenu="return false">
+
+    <div class="stick">
+      <div style="flex-shrink:0;" class="stick-ico"></div>
+      <div style="flex-grow:0.2;cursor: pointer;"  onclick="window.location.href='index.html'">
+        <h1 class="stick-head">Secure</h1>
+      </div>
+      <div></div>
+      <div style="flex-grow:0.8;">
+        <ul class="ul">
+          <li class="li to-bottom" onclick="window.location.href='file.html'">File</li>
+          <li class="li to-bottom" onclick="window.location.href='password.html'">Password</li>
+          <li class="li to-bottom" onclick="window.location.href='pin.html'">Pin</li>
+          <li class="li to-bottom" onclick="window.location.href='main.html'">Message</li>
+        </ul>
+      </div>
+    </div>
+
+<div class="head">
+    <h1 align="center">Message Cipher</h1>
+</div>
+
+<div class="con-main">
+  
+<div>
+  
+  <textarea id="text" placeholder="Enter your message"></textarea>
+
+</div>
+<div style="flex-basis: 200px">
+  
+<center>
+  <select id="ciphers">
+  <option value="simple">Simple</option>
+  <option value="complex">Complex</option>
+</select>
+<br>
+<button onclick="encode()">Encrypt</button>
+<br>
+<button onclick="decode()">Decrypt</button>
+<br>
+<button id="output" onclick="output()">Copy</button>
+</center>
+
+</div>
+<div>
+  
+<textarea id="demo"></textarea>
+
+</div>
+
+</div>
+
+<div class="note">
+  
+<p align="center" class="pnote"><b>Note: </b>Avoid using this  &#xf522;  type of characters in your message and don't make changes in the encrypted text it may the affect your pin while Decrypting. Use 'Ctrl + V' to paste and click Copy button to copy the text.</p>
+
+</div>
+      <div class="last">
+        <div class="img"></div>
+      </div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+
+
+<!-- <textarea id="text"></textarea>
+<select id="ciphers">
+  <option value="simple">Simple</option>
+  <option value="complex">Complex</option>
+</select>
+<button onclick="encode()">Enocde</button>
+<button onclick="decode()">Decode</button>
+<textarea id="demo"></textarea>
+<button id="output" onclick="output()">Copy</button>
+
+ -->

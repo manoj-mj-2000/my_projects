@@ -1,0 +1,380 @@
+.absoltxt<html>
+  <head>
+    <title>Secure</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+
+    <style type="text/css">
+body
+{
+  background:black;
+  font-family: 'Ubuntu', sans-serif;
+}
+* {box-sizing: border-box;}
+img {vertical-align: middle;}
+.stick
+{
+  width:1275px;
+  height:100px;
+  position: sticky;
+  top:0;
+  margin:auto;
+  background: #6d90a3;
+  display:flex;
+}
+.stick > div
+{
+  margin:auto;
+  width:8%;
+  height:100%;
+}
+.secure-main
+{
+  width:1275px;
+  margin:auto;
+  background:white;
+}
+.stick-ico
+{
+  background-image: url(https://cdn.haproxy.com/wp-content/uploads/2018/07/KB-Security--e1533820237622.png);
+  background-position: left;
+  background-size:200% 100%;
+}
+.stick-head
+{
+  color:white;
+  padding:4%;
+}
+.ul
+{
+  color:white;
+  list-style-type:none;
+  margin-right:5%;
+}
+.li{
+  float:right;
+  padding:3% 3% 3% 3%;
+  font-size: 20px;
+}
+.to-bottom {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.5s;
+  cursor:pointer;
+}
+.to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #27b8d1;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.to-bottom:hover {
+  color: white;
+}
+.to-bottom:hover:before {
+  transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0,1.7,1,.57);
+}
+.slide-container
+{
+  height:450px;
+  width:100%;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 500%;
+  font-weight:bold;
+  position: absolute;
+  top: 0px;
+  padding:12% 5%;
+  width: 100%;
+}
+.text1 {
+  color: #f2f2f2;
+  font-size: 150%;
+  font-weight:bold;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  padding:20% 5%;
+  width: 100%;
+}
+.mySlides {display: none;}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display:none;
+}
+.second
+{
+  width:100%;
+  height:500px;
+  background:linear-gradient(to top,rgb(66,135,255),rgb(255,255,255));
+  display:flex;
+  background-attachment:fixed;
+}
+.second > div
+{
+  margin:auto;
+  width:25%;
+  height:70%;
+  margin-top:5%;
+}
+.sec-head-ico
+{
+  display:flex;
+}
+.sec-head-ico > div
+{
+  width:100%;
+  height:90%;
+  margin-top:12%;
+  background-color:transparent;
+  border-radius:10%;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.ico
+{
+  width:30%;
+  height:30%;
+  margin:-12% auto;
+  border-radius:50%;
+}
+.para
+{
+  padding:5%;
+  text-align:justify;
+}
+.tri-div
+{
+  width:100%;
+  height:400px;
+  display:flex;
+  background:linear-gradient(to top,rgb(66,135,255),rgb(255,255,255),rgb(66,135,255));
+  background-attachment:fixed;
+}
+.triangle-down1 {
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 300px solid #0292b7;
+  margin:auto 0% auto 15.5%;
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 300px solid #0292b7;
+  margin:auto 0% auto -12%;
+}
+.triangle-down2 {
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 300px solid #0292b7;
+  margin:auto 0% auto -12%;
+}
+.absoltxt
+{
+  width: 750px;
+  height: 200px;
+  position: absolute;
+  margin: 6% 16%;
+  display: flex;
+  justify-content: center;
+}
+.absoltxt > div
+{
+width: 200px;
+height: 75px;
+margin: auto;
+}
+.abstext
+{
+margin: 8% auto;
+font-size: xx-large;
+text-align: center;
+color: white;
+}
+.last
+{
+width: 100%;
+height: 200px;
+background: linear-gradient(to top,rgb(255,255,255),rgb(66,135,255),rgb(255,255,255));
+background-attachment: fixed;
+}
+.img
+{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-size: cover;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bfa9cee-df94-40cf-a39d-05c0b557f0d3/d9bhf65-759c53d2-69ac-49d6-836c-db6b5c15a220.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiZmE5Y2VlLWRmOTQtNDBjZi1hMzlkLTA1YzBiNTU3ZjBkM1wvZDliaGY2NS03NTljNTNkMi02OWFjLTQ5ZDYtODM2Yy1kYjZiNWMxNWEyMjAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.s3xGk0N-4-K3UhMsJJE5gUA99MRCxnAxBbJokjJyVJM); 
+}
+    </style>
+    <link rel="icon" href="http://www.pngmart.com/files/7/Security-PNG-Transparent.png">
+  </head>
+  <body oncontextmenu="return false">
+    <div class="stick">
+      <div style="flex-shrink:0;" class="stick-ico"></div>
+      <div style="flex-grow:0.2;cursor: pointer;" onclick="window.location.href='index.html'">
+        <h1 class="stick-head">Secure</h1>
+      </div>
+      <div></div>
+      <div style="flex-grow:0.8;">
+        <ul class="ul">
+          <li class="li to-bottom" onclick="window.location.href='file.html'">File</li>
+          <li class="li to-bottom" onclick="window.location.href='password.html'">Password</li>
+          <li class="li to-bottom" onclick="window.location.href='pin.html'">Pin</li>
+          <li class="li to-bottom" onclick="window.location.href='main.html'">Message</li>
+        </ul>
+      </div>
+    </div>
+    <div class="secure-main">
+      <div class="slide-container">
+        <div class="mySlides fade">
+          <img src="https://cdn.pixabay.com/photo/2017/05/08/19/35/cyber-security-2296269_960_720.jpg" style='height: 450px; width: 1275px; object-fit: cover'>
+          <div class="text">Secure</div>
+          <div class="text1">Keep calm we secure</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://thumbs.gfycat.com/DelectableUnfitEeve-size_restricted.gif" style='height: 450px; width: 1275px; object-fit: cover'>
+          <div class="text">Safe</div>
+          <div class="text1">We believe in keep you safe</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://cdn.dribbble.com/users/1514097/screenshots/5687494/working.gif" style='height: 450px; width: 1275px; object-fit: cover'>
+          <div class="text">Confidential</div>
+          <div class="text1">Unique design of complexity</div>
+        </div>
+      </div>
+      <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+      <div class="second">
+        <div class="sec-head-ico">
+          <div>
+            <div class="ico">
+              <img src="http://www.pngmart.com/files/7/Security-PNG-Transparent.png" width=100% height=100%>
+            </div>
+             <p class="para"><br>A security system with several layers is difficult to hack. So, even if your data is targeted, getting through the many tiers of security will be a hassle. Using a firewall, making sure your antivirus software is updated, running antivirus checks frequently and updating your programs regularly are all part of maintaining your personal data security.<br><br><b>We secure because its not your data, its ours..</b><p>
+          </div>
+        </div>
+        <div class="sec-head-ico">
+          <div>
+            <div class="ico">
+              <img src="https://cdn1.iconfinder.com/data/icons/ecology-environment-4/96/Ecology-01-02-512.png" width=100% height=100%>
+            </div>
+            <p class="para"><br>The use of silly and meaningless safety slogans matters, it creates a distraction and delusion that safety and risk are being addressed. We may feel good about speaking such words but they dumb down culture and distract people from taking safety seriously<br><br>
+              <b>Our work is for your safety..</b>
+            </p>
+          </div>
+        </div>
+        <div class="sec-head-ico">
+          <div>
+            <div class="ico">
+              <img src="https://cdn4.iconfinder.com/data/icons/folders-blue/64/194_folder-access-lock-512.png" width=100% height=100%>
+            </div><br>
+            <p class="para">
+              Confidentiality refers to the boundaries surrounding shared secrets and to the process of guarding these boundaries. While confidentiality protects much that is not in fact secret, personal secrets lie at its core. A Relationship is not based on the length of time. It's based on the foundation you built.       
+            <br><br>
+              <b>Don't be afraid of speaking up for yourself..</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tri-div">
+      <div class="absoltxt">
+        <div style="margin-top: 1%">
+          <p class="abstext"><b>S</b>hield is our<br>Service</p>
+        </div>
+        <div style="margin-top: 14%">
+          <p class="abstext"><b>S</b>ecure is our<br>Duty</p>
+        </div>
+        <div style="margin-top: 1%">
+          <p class="abstext"><b>S</b>afety is our<br>Guarantee</p>
+        </div>
+      </div>
+        <div class="triangle-down1"></div>
+        <div class="triangle-up"></div>
+        <div class="triangle-down2"></div>
+      </div>
+      <div class="last">
+        <div class="img"></div>
+      </div>
+    </div>
+  <script type="text/javascript">
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); 
+  // Change image every 5 seconds
+}
+
+
+document.onkeydown = function(e) {
+  if(e.keyCode == 123) {
+   return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+   return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+   return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+   return false;
+  }
+
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+   return false;
+  }      
+}
+
+  </script>
+  </body>
+</html>

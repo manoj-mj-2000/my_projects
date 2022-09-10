@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pin</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="http://www.pngmart.com/files/7/Security-PNG-Transparent.png">
+<style type="text/css">
+
+body
+{
+  background:black;
+  font-family: 'Ubuntu', sans-serif;
+}
+* {box-sizing: border-box;}
+img {vertical-align: middle;}
+.stick
+{
+  width:100%;
+  height:100px;
+  position: sticky;
+  top:0;
+  margin:auto;
+  background: #6d90a3;
+  display:flex;
+}
+.stick > div
+{
+  margin:auto;
+  width:8%;
+  height:100%;
+}
+.secure-main
+{
+  width:1275px;
+  margin:auto;
+  background:white;
+}
+.stick-ico
+{
+  background-image: url(https://cdn.haproxy.com/wp-content/uploads/2018/07/KB-Security--e1533820237622.png);
+  background-position: left;
+  background-size:200% 100%;
+}
+.stick-head
+{
+  color:white;
+  padding:4%;
+}
+.ul
+{
+  color:white;
+  list-style-type:none;
+  margin-right:5%;
+}
+.li{
+  float:right;
+  padding:3% 3% 3% 3%;
+  font-size: 20px;
+}
+.to-bottom {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.5s;
+  cursor:pointer;
+}
+.to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #27b8d1;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.to-bottom:hover {
+  color: white;
+}
+.to-bottom:hover:before {
+  transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0,1.7,1,.57);
+}
+.head
+{
+  border: 1px solid transparent;
+width: 100%;
+height: 100px;
+text-shadow: 3px 3px 20px #000, 3px 3px 20px #000;
+color: white;
+background: linear-gradient(to top,rgb(81, 161, 251),rgb(255,255,255),rgb(81, 161, 251));
+background-attachment: fixed;
+}
+.img
+{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-size: cover;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bfa9cee-df94-40cf-a39d-05c0b557f0d3/d9bhf65-759c53d2-69ac-49d6-836c-db6b5c15a220.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiZmE5Y2VlLWRmOTQtNDBjZi1hMzlkLTA1YzBiNTU3ZjBkM1wvZDliaGY2NS03NTljNTNkMi02OWFjLTQ5ZDYtODM2Yy1kYjZiNWMxNWEyMjAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.s3xGk0N-4-K3UhMsJJE5gUA99MRCxnAxBbJokjJyVJM); 
+}
+
+.con-main
+{
+  border: 1px solid transparent;
+  height: 450px;
+  display: flex;
+  background: linear-gradient(to top,rgb(255,255,255),rgb(81, 161, 251),rgb(255,255,255));
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}
+#text
+{
+text-align: center;
+display: flex;
+width: 80%;
+height: 20%;
+font-size: 50px;
+margin: auto;
+border: 5px solid #006fff;
+border-radius: 25px;
+}
+#out
+{
+text-align: center;
+display: flex;
+width: 80%;
+height: 20%;
+font-size: 25px;
+margin: auto;
+border: 5px solid #006fff;
+border-radius: 25px;
+}
+.butset
+{
+border: 5px solid #006fff;
+border-radius: 25px;
+width: 80%;
+height: 20%;
+margin: auto;
+}
+input[type="button"]
+{
+margin-top: 1.5%;
+width: 12%;
+height: 50px;
+font-size: larger;
+color: #000;
+border: 3px solid #006fff;
+border-radius: 10px;
+background: transparent;
+transition-duration: 0.5s;
+}
+input[type="button"]:hover
+{
+color:white;
+background-color: #6d90a3;
+border: 1px solid transparent;
+}
+
+.note
+{
+  border: 1px solid transparent;
+width: 100%;
+height: 150px;
+background: linear-gradient(to top,rgb(81, 161, 251),rgb(255,255,255),rgb(81, 161, 251));
+background-attachment: fixed;  
+}
+.pnote
+{
+font-size: 15px;
+margin-top: 4%;
+/*border: 1px solid;*/
+padding: 10px;
+}
+.last
+{
+width: 100%;
+height: 120px;
+background: linear-gradient(to top,rgb(255,255,255),rgb(66,135,255),rgb(255,255,255));
+background-attachment: fixed;
+}
+
+</style>
+</head>
+<body onload='clear()'  oncontextmenu="return false">
+
+    <div class="stick">
+      <div style="flex-shrink:0;" class="stick-ico"></div>
+      <div style="flex-grow:0.2;cursor: pointer;" onclick="window.location.href='index.html'">
+        <h1 class="stick-head">Secure</h1>
+      </div>
+      <div></div>
+      <div style="flex-grow:0.8;">
+        <ul class="ul">
+          <li class="li to-bottom" onclick="window.location.href='file.html'">File</li>
+          <li class="li to-bottom" onclick="window.location.href='password.html'">Password</li>
+          <li class="li to-bottom" onclick="window.location.href='pin.html'">Pin</li>
+          <li class="li to-bottom" onclick="window.location.href='main.html'">Message</li>
+        </ul>
+      </div>
+    </div>
+
+<div class="head">
+    <h1 align="center">Pin Cipher</h1>
+</div>
+
+<div class="con-main">
+
+<input type="password" id="text" placeholder="Use only numbers">
+<div class="butset">
+<center>
+	<input type="button" onclick="encode()"  value="Encrypt">
+	<input type="button" onclick="output()" value="Copy">
+	<input type="button" onclick="decode()"  value="Decrypt">	
+</center>
+</div>
+<input type="text" id="out">
+
+</div>
+<div class="note">
+  
+<p align="center" class="pnote"><b>Note: </b>Avoid using this  &#xf522;  type of characters in your message and don't make changes in the encrypted text it may the affect your pin while Decrypting. Use 'Ctrl + V' to paste and click Copy button to copy the text. If you loss or damage your encrypted text <a onclick="retrieve()" style="text-decoration: underline;color: blue;cursor: pointer;">Click here to retireve</a></p>
+
+</div>
+      <div class="last">
+        <div class="img"></div>
+      </div>
+
+<script type="text/javascript" src="pin.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+<input type="password" id="text">
+<br>
+<input type="button" onclick="encode()"  value="Encode">
+
+<input type="button" onclick="decode()"  value="Decode">
+<br>
+<input type="text" id="out"> -->
