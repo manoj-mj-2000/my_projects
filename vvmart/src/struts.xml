@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="default" extends="struts-default">
+		<action name="login" class="com.dump.LoginAction">
+			<result name="success">home.jsp</result>
+			<result name="error">index.jsp</result>
+			<result name="input">index.jsp</result>
+		</action>
+	</package>
+
+	<package name="customers" namespace="/customers" extends="struts-default">
+
+		<action name="Home">
+			<result name="success">/customers/customer.jsp</result>
+		</action>
+		<action name="customer" class ="com.customer.CustomerAction">
+		</action>
+		
+	</package>
+
+	<package name="staffs" namespace="/staffs" extends="struts-default">
+
+		<action name="Home">
+			<result name="success">/staffs/staff.jsp</result>
+		</action>
+		<action name="staff" class="com.staff.StaffAction">
+		</action>
+	</package>
+
+	<package name="vendors" namespace="/vendors" extends="struts-default">
+
+		<action name="Home">
+			<result name="success">/vendors/vendor.jsp</result>
+		</action>
+		<action name="vendor" class="com.vendor.VendorAction">
+		</action>
+	</package>
+
+	<package name="products" namespace="/products" extends="struts-default">
+
+		<action name="Home">
+			<result name="success">/products/product.jsp</result>
+		</action>
+		<action name="product" class="com.product.ProductAction"></action>
+	</package>
+
+	<package name="purchases" namespace="/purchases" extends="struts-default">
+
+		<action name="Home">
+			<result name="success">/purchases/purchase.jsp</result>
+		</action>
+		<action name="purchase" class="com.purchase.PurchaseAction"></action>
+	</package>
+
+	<package name="sales" namespace="/sales" extends="struts-default">
+
+		<action name="Home">
+			<result name="success">/sales/sales.jsp</result>
+		</action>
+		<action name="sale" class="com.sales.SalesAction"></action>
+	</package>
+	
+	<package name="invoices" namespace="/invoices" extends="struts-default">
+
+		<action name="Home">
+			<result name="success">/invoices/invoice.jsp</result>
+		</action>
+		<action name="invoice" class="com.invoice.InvoiceAction"></action>
+	</package>
+</struts>
