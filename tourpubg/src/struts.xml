@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="default" namespace="/" extends="struts-default">
+		
+		<interceptors>
+			<interceptor name="checkInterceptor" class="com.interceptors.CheckInterceptor"></interceptor>
+			<interceptor-stack name="checkStack">
+				<interceptor-ref name="checkInterceptor" />
+				<interceptor-ref name="servletConfig"/>
+				<interceptor-ref name="params"/>
+				<interceptor-ref name="prepare"/>
+				<interceptor-ref name="chain"/>
+				<interceptor-ref name="modelDriven"/>
+				<interceptor-ref name="fileUpload"/>
+				<interceptor-ref name="staticParams"/>
+				<interceptor-ref name="conversionError"/>
+				<interceptor-ref name="workflow"/>
+			</interceptor-stack>
+			
+		</interceptors>
+		
+		<action name="check" class="com.dump.CheckAction">
+			<interceptor-ref name="checkStack" />
+		</action>
+
+	</package>
+
+	<package name="users" namespace="/users" extends="struts-default">
+	
+		<interceptors>
+			
+			<interceptor name="userInterceptor" class="com.interceptors.UserInterceptor"></interceptor>
+			<interceptor-stack name="userStack">
+				<interceptor-ref name="userInterceptor" />
+				<interceptor-ref name="servletConfig"/>
+				<interceptor-ref name="params"/>
+				<interceptor-ref name="prepare"/>
+				<interceptor-ref name="chain"/>
+				<interceptor-ref name="modelDriven"/>
+				<interceptor-ref name="fileUpload"/>
+				<interceptor-ref name="staticParams"/>
+				<interceptor-ref name="conversionError"/>
+				<interceptor-ref name="workflow"/>
+			</interceptor-stack>
+			
+		</interceptors>
+		
+		<action name="user" class="com.user.UserAction">
+			<interceptor-ref name="userStack" />
+		</action>
+
+	</package>
+	
+	<package name="tournament" namespace = "/tournaments" extends="struts-default">
+	
+		<interceptors>
+			
+			<interceptor name="tourInterceptor" class="com.interceptors.TourInterceptor"></interceptor>
+			<interceptor-stack name="tourStack">
+				<interceptor-ref name="tourInterceptor" />
+				<interceptor-ref name="servletConfig"/>
+				<interceptor-ref name="params"/>
+				<interceptor-ref name="prepare"/>
+				<interceptor-ref name="chain"/>
+				<interceptor-ref name="modelDriven"/>
+				<interceptor-ref name="fileUpload"/>
+				<interceptor-ref name="staticParams"/>
+				<interceptor-ref name="conversionError"/>
+				<interceptor-ref name="workflow"/>
+			</interceptor-stack>
+		</interceptors>
+		<action name = "tour" class="com.tour.TournamentAction">
+			<interceptor-ref name="tourStack" /> 
+		</action>
+	
+	</package>
+</struts>
