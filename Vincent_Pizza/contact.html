@@ -1,0 +1,365 @@
+<html>
+  <head>
+    <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    
+    <style type="text/css">
+
+      body{
+  background-color:black;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.pizza-main{
+  width:1270px;
+  height:100%;
+  margin:auto;
+}
+.main-link
+{
+  color:white;
+  text-decoration: none;
+}
+.main-link:hover
+{
+  color:#F5C413;
+}
+.pizza-top-flex {
+  display: flex;
+  width:100%;
+  height:290px;
+}
+
+.pizza-top-flex > div {
+  width:20%;
+  height:50%;
+  margin:auto;
+}
+.ph{
+  color:white;
+  float:left;
+  font-size:120%;
+  margin:0% 0% 0% 5%;
+}
+.cart{
+  color:white;
+  float:right;
+  font-size:120%;
+  margin:3% 0% 0% 5%;
+}
+.pizza-head{
+  width:100%;
+  height:600px;
+  margin-top:5%;
+  background-image:url(https://us.123rf.com/450wm/alexandernedviga/alexandernedviga1708/alexandernedviga170800091/83413785-textura-transparente-de-la-superficie-de-madera-oscura-fondo-oscuro-del-panel-del-tablero-de-madera-.jpg?ver=6);
+  display:flex;
+}
+.pizza-head > div
+{
+  width:40%;
+  height:80%;
+}
+ul{
+  list-style-type:none;
+  text-align:center;
+  color:white;
+  font-size:150%;
+  margin-top:0%
+}
+li{
+  float:left;
+  margin-left:5%;
+}
+.page-head{
+  width: 100%;
+  height: 250px;
+  margin-top:5%;
+  background-image: url(https://enzospizzaco.com/images/award-winning-pizza-catering-no-video.jpg);
+  background-size:cover;
+    background-attachment: fixed;
+}
+.page-head:before{
+  content: "";
+  width: 1275px;
+  height: 250px;
+  position:absolute;
+  background-color: #F5C413;
+  opacity: 0.8;
+}
+.pg-head
+{
+  width:1275px;
+  position:absolute;
+  height:0px;
+  font-size:300%;
+  text-align:center;
+  padding:auto;
+}
+.contact-flex{
+  width:100%;
+  height:600px;
+  display:flex;
+  justify-content:center;
+}
+.contact-flex > div{
+  width:35%;
+  height:80%;
+  margin:4% 0% 0% 2%;
+}
+.map{
+  background-color:#3e3e3e;
+  width:446px;
+  height:480px;
+  opacity:0.5;
+  position:absolute;
+  top:0;
+}
+.map-txt
+{
+  color:white;
+  text-align:center;
+  margin:50% 0% 0% 0%;
+}
+.map:hover{
+  transition-duration:0.5s;
+  opacity:0;
+}
+.text
+{
+  width:40%;
+  height:15%;
+  background-color:transparent;
+  border:2px solid;
+  color:black;
+  margin: 5% 0% 0% 5%;
+  padding-left:5px;
+}
+.buttton
+{
+    width:35%;
+  height:12%;
+  background-color:transparent;
+  border:2px solid;
+  color:black;
+    margin: 5% 0% 0% 30%;
+    font-size: 20px;
+}
+.buttton:hover
+{
+  transition-duration: 0.5s;
+  background-color: black;
+  color: #F5C413;
+}
+.spl
+{
+    margin: 5% 0% 0% 5%;
+    width:85%;
+  height:35%;
+    background-color:transparent;
+  border:2px solid;
+  color:black;
+  padding:10px;
+}
+.table-div{
+  background-color:#f5c413;
+  position:absolute;
+  width:447px;
+  height:480px;
+  opacity:0.85;
+}
+.branch
+{
+    width:100%;
+  height:500px;
+  display:flex;
+  justify-content:center;
+}
+.branch > div
+{
+    width:35%;
+  height:80%;
+  margin:0% 0% 0% 2%;
+}
+.shop-name{
+  color:white;
+}
+.dir-but
+{
+  background-color:transparent;
+  color:white;
+  width:30%;
+  height:50px;
+  margin-top:2%;
+  transition-duration:0.5s;
+}
+.dir-but:hover
+{
+  color:#f5c413;
+  border:2px solid #f5c413;
+}
+.keep-in{
+  width:100%;
+  height:400px;
+}
+#subs{
+  color:white;
+  text-align:center;
+  margin-top:5%;
+}
+.submit{
+  width:50%;
+  height:15%;
+  border:1px solid grey;
+  margin:5% auto auto auto;
+}
+.email{
+  color:white;
+  background-color:transparent;
+  width:80%;
+  height:100%;
+  border:0px;
+  padding-left:2%;
+}
+.submit-button{
+  width:15%;
+  height:100%;
+  background-color:#2e2e2e;
+  color:white;
+  border:0;
+  margin-left:4.3%;
+}
+input[type=submit]:hover{
+  background-color:#ffbb00;
+  color:black;
+  transition-duration:0.5s;
+  animation-name: wob-skew;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+@keyframes wob-skew{
+  15%{
+    transform: skewX(22deg);
+  }
+  60%{
+    transform: skewX(-24deg);
+  }
+  100%{
+    transform: skewX(0deg);
+  }
+}
+.contact{
+  color:white;
+  text-align:center;
+  margin-top:3%;
+  font-size:120%;
+}
+#soc{
+  margin-left:2%;
+}
+.p-rel{
+  color:#f5c413;
+  text-align:center;
+  margin-top:80%;
+}
+.rel-name{
+  color:white;
+  text-align:center;
+}
+      
+    </style>
+
+  </head>
+  <body>
+    <div class="pizza-main">
+      <div class="pizza-top-flex">
+        <div style="padding-top:10%">
+          <i class='fas fa-mobile-alt' style="font-size:48px;color:#ffbb00;float:left"></i>
+          <div class="ph">+1 215 456 15 15<br>
+            <span style="color:grey;font-size:90%">8:00 am – 11:30 pm</span>
+          </div>
+        </div>
+        <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/logo.png" width="100%" height="100%"></div>
+        <div style="padding-top:10%">
+          <div class="cart"></div>
+          <a href="menu.html"><i class="fab fa-opencart" style="font-size:36px;color:#ffbb00;float:right"></i></a>
+        </div>
+      </div>
+      <ul>
+        <li style="margin-left:28%;"><a href="index.html" class="main-link">Home</a></li>
+        <li><a href="menu.html" class="main-link">Menu</a></li>
+        <li><a href="detail.html" class="main-link">Shop</a></li>
+        <li><a href="contact.html" class="main-link">Contact</a></li>
+        <li><a href="about.html" class="main-link">About</a></li>
+      </ul>
+      <div class="page-head">
+        <div class="pg-head">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+      <div class="contact-flex">
+        <div style="background-image:url(https://lh3.googleusercontent.com/9zECOmZNHPWeRxJpL2s8ZO7kSzwnAMs_P34xqG_xA_fVc0MoluZaT9VvGXRQhbEFgxlMbMf7kA=w640-h400-e365);  background-attachment: fixed; background-size:cover;">
+          <div style="" class="table-div">
+          <center><h1>Book Table Here</h1></center>
+            <p align="center">"Surround yourself with pizza, not negativity"</p>
+          <fieldset style="border:0px solid; height:70%">
+            <input type="text" placeholder="Your Name" class="text">
+            <input type="text" placeholder="Your Phone" class="text">
+            <input type="text" placeholder="Date" class="text">
+            <input type="text" placeholder="Number of People" class="text">
+            <textarea placeholder="Special Request" class="spl"></textarea>
+            <button class="buttton">Submit</button>
+          </fieldset>
+        </div>
+        </div>
+        <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31431.77345318398!2d-117.94539044306033!3d34.09877280677222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32802601dc845%3A0x2d71c8ca211e389!2sVincent%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1564125233353!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+       
+        </div>
+      </div>
+      <center class="shop-name"><h1>Other Branches</h1></center>
+      <div class="branch">
+        <div>
+          <img src="https://cdn.vox-cdn.com/thumbor/i3jLEtyzpKsg7Lnh2HEdqquS4sg=/0x0:1800x1200/1200x800/filters:focal(756x456:1044x744)/cdn.vox-cdn.com/uploads/chorus_image/image/62670461/Parlor_RN_120118_015HR.0.jpg" width="100%" height="60%">
+          <center class="shop-name"><h2>Brooklyn</h2>
+            <p>St Johns Pl/Nostrand Av, Brooklyn, NY 11216, USA<br>
++1 215 456 15 15 brooklyn@vincent.com</p>
+            <button class="dir-but">Get Directions ></button>
+          </center>
+        </div>
+        <div>
+          <img src="http://westloop.parlorchicago.com/wp-content/uploads/2014/10/Parlor-090214-114.jpg" width="100%" height="60%">
+          <center class="shop-name"><h2>Queens</h2>
+            <p>Hillside Av/162 St, Queens, NY, Queens, New York 11432, USA<br>
++1 079 385 4690 queens@vincent.com</p>
+            <button class="dir-but">Get Directions ></button>
+          </center>
+        </div>
+      </div>
+             <div class="keep-in">
+            <h1 id="subs">Subcribe our Vincent Pizza</h1>
+            <div class="submit">
+                <input type="text" placeholder="Email Address" class="email" id="subs_email">
+                <input type="submit" value="Submit" class="submit-button" onclick="subscribe()"> </div>
+            <p class="contact">+1 215 456 15 15.<span style="color:grey;"> 8:00 am – 11:30 pm</span></p>
+            <p class="contact"><a href=""><i class='fab fa-facebook-f' style='font-
+size:24px;color:grey;'></i></a> <a href="" id="soc"><i class='fab fa-twitter'
+style='font-size:24px;color:grey;'></i> </a> <a href="" id="soc"><i class='fab
+fa-instagram' style='font-size:24px;color:grey;'></i> </a> </p>
+            <p style="color:grey;text-align:center;">Copyrights @2018 Vincent.</p>
+        </div>
+    </div>
+        <script type="text/javascript" charset="utf-8">
+        function subscribe(){
+        let sub_email= document.getElementById("subs_email").value;
+        if(sub_email==="")
+        {
+            alert("Enter your correct email address");
+        }
+        else
+        {
+            alert('Thanks for your Subcription');
+        }
+        }
+    </script>
+  </body>
+</html>

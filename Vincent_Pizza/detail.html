@@ -1,0 +1,453 @@
+ <html>
+  <head>
+    <title>Product Detail</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    
+    <style type="text/css">
+
+    body{
+  background-color:black;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.pizza-main{
+  width:1270px;
+  height:100%;
+  margin:auto;
+}
+.main-link
+{
+  color:white;
+  text-decoration: none;
+}
+.main-link:hover
+{
+  color:#F5C413;
+}
+.pizza-top-flex {
+  display: flex;
+  width:100%;
+  height:290px;
+}
+
+.pizza-top-flex > div {
+  width:20%;
+  height:50%;
+  margin:auto;
+}
+.ph{
+  color:white;
+  float:left;
+  font-size:120%;
+  margin:0% 0% 0% 5%;
+}
+.cart{
+  color:white;
+  float:right;
+  font-size:120%;
+  margin:3% 0% 0% 5%;
+}
+.pizza-head{
+  width:100%;
+  height:600px;
+  margin-top:5%;
+  background-image:url(https://us.123rf.com/450wm/alexandernedviga/alexandernedviga1708/alexandernedviga170800091/83413785-textura-transparente-de-la-superficie-de-madera-oscura-fondo-oscuro-del-panel-del-tablero-de-madera-.jpg?ver=6);
+  display:flex;
+
+}
+.pizza-head > div
+{
+  width:40%;
+  height:80%;
+}
+ul{
+  list-style-type:none;
+  text-align:center;
+  color:white;
+  font-size:150%;
+  margin-top:0%
+}
+li{
+  float:left;
+  margin-left:5%;
+}
+.page-head{
+  width: 100%;
+  height: 250px;
+  margin-top:5%;
+  background-image: url(https://enzospizzaco.com/images/award-winning-pizza-catering-no-video.jpg);
+  background-size:cover;
+    background-attachment: fixed;
+}
+.page-head:before{
+  content: "";
+  width: 1275px;
+  height: 250px;
+  position:absolute;
+  background-color: #F5C413;
+  opacity: 0.8;
+}
+.pg-head
+{
+  width:1275px;
+  position:absolute;
+  font-size:300%;
+  text-align:center;
+    height: 10%;
+}
+.detail-flex
+{
+  border:0px solid white;
+  width:100%;
+  height:500px;
+  display:flex;
+  justify-content:center;
+}
+.detail-flex > div
+{
+  width:30%;
+  height:100%;
+  margin:5% 0% 0% 2%;
+}
+
+.menu-button{
+  text-decoration:none;
+  font-size:100%;
+  width:80%;
+  height:10%;
+  color:white;
+  margin:10% 10% 10% 10%;
+  border:2px solid #F5C413;
+  color:#F5C413;
+  background-color:TRANSPARENT;
+}
+.menu-button:hover{
+  color:black;
+  background-color:#f5c413;
+  transition-duration:0.5s;
+  transition-timing-function:ease-out;
+}
+.menu-button2{
+  text-decoration:none;
+  border:0px;
+  font-size:100%;
+  width:80%;
+  height:10%;
+  margin:10%;
+  color:white;
+  color:black;
+  background-color:#f5c413;
+}
+.menu-button2:hover{
+  border:2px solid #F5C413;
+  background-color:transparent;
+  color:#F5C413;
+  transition-duration:0.5s;
+}
+.quan{
+  width:25%;
+  height:8%;
+  background-color:transparent;
+  border:2px solid #f5c413;
+  margin:80% 10% 10% 10%;
+  color:#f5c413;
+  padding-left:7%;
+  font-size:150%;
+}
+.p-name{
+  color:white;
+  font-size:250%;
+}
+.p-price{
+  color:#f5c413;
+}
+.p-desc{
+  color:white;
+  font-size:110%;
+}
+.back{
+      width: 100%;
+      height: 275px;
+      position: relative;
+      background-image: url(https://amorebandb.com/wp-content/uploads/2017/01/Pizza-2-Pizza.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+    }
+    .back:before{
+      content: "";
+      position: relative;
+      width: 100%;
+      height: 275px;
+      position: absolute;
+      background-color: #F5C413;
+      opacity: 0.8;
+    }
+.other-info
+{
+  width:100%;
+  height:250px;
+  display:flex;
+  justify-content:center;
+  background-color:transparent;
+  position:absolute;
+}
+.other-info > div{
+  width:30%;
+  height:86%;
+  border-radius:10px;
+  margin:2% 5%;
+}
+.desc{
+  text-align:right;  
+}
+.desc:hover{
+  transition-duration:0.3s;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 10px 6px 20px 10px rgba(0, 0, 0, 0.19);
+}
+.add{
+  text-align:left;  
+}
+.add:hover{
+  transition-duration:0.3s;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 10px 6px 20px 10px rgba(0, 0, 0, 0.19);
+}
+.span{
+    color:black;
+  font-size:100%;
+  margin-right:5%;
+  font-weight:normal;
+}
+.size-select
+{
+  background-color:transparent;
+  color:black;
+  margin-left:5%;
+  border:2px solid;
+  width:30%;
+  height:12%;
+  border-radius:5px;
+}
+.add-info
+{
+  color:black;
+  margin-left:5%;
+  border:2px solid;
+  width:80%;
+  height:35%;
+  background-color:transparent;
+  border-radius:10px;
+  padding:10px 0px 0px 10px;
+}
+.related
+{
+  width:100%;
+  height:400px;
+  display:flex;
+  justify-content:center;
+}
+.related > div
+{
+  background-color:#1d2326;
+  width:13%;
+  height:80%;
+  margin:2.5% 0% 0% 2%;
+  cursor:pointer;
+  transition-duration:0.5s;
+  transition-property:transform;
+}
+.related > div:hover
+{
+  transform:scale(1.1);
+}
+.keep-in{
+  width:100%;
+  height:400px;
+}
+#subs{
+  color:white;
+  text-align:center;
+  margin-top:5%;
+}
+.submit{
+  width:50%;
+  height:15%;
+  border:1px solid grey;
+  margin:5% auto auto auto;
+}
+.email{
+  color:white;
+  background-color:transparent;
+  width:80%;
+  height:100%;
+  border:0px;
+  padding-left:2%;
+}
+.submit-button{
+  width:15%;
+  height:100%;
+  background-color:#2e2e2e;
+  color:white;
+  border:0;
+  margin-left:4.3%;
+}
+input[type=submit]:hover{
+  background-color:#ffbb00;
+  color:black;
+  transition-duration:0.5s;
+  animation-name: wob-skew;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+@keyframes wob-skew{
+  15%{
+    transform: skewX(22deg);
+  }
+  60%{
+    transform: skewX(-24deg);
+  }
+  100%{
+    transform: skewX(0deg);
+  }
+}
+.contact{
+  color:white;
+  text-align:center;
+  margin-top:3%;
+  font-size:120%;
+}
+#soc{
+  margin-left:2%;
+}
+.p-rel{
+  color:#f5c413;
+  text-align:center;
+  margin-top:80%;
+}
+.rel-name{
+  color:white;
+  text-align:center;
+}
+
+      
+    </style>
+
+  </head>
+  <body>
+    <div class="pizza-main">
+      <div class="pizza-top-flex">
+        <div style="padding-top:10%">
+          <i class='fas fa-mobile-alt' style="font-size:48px;color:#ffbb00;float:left"></i>
+          <div class="ph">+1 215 456 15 15<br>
+            <span style="color:grey;font-size:90%">8:00 am – 11:30 pm</span>
+          </div>
+        </div>
+        <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/logo.png" width="100%" height="100%"></div>
+        <div style="padding-top:10%">
+          <div class="cart" id="demo"></div>
+          <a href="menu.html"><i class="fab fa-opencart" style="font-size:36px;color:#ffbb00;float:right"></i></a>
+        </div>
+      </div>
+      <ul>
+        <li style="margin-left:28%;"><a href="index.html" class="main-link">Home</a></li>
+        <li><a href="menu.html" class="main-link">Menu</a></li>
+        <li><a href="detail.html" class="main-link">Shop</a></li>
+        <li><a href="contact.html" class="main-link">Contact</a></li>
+        <li><a href="about.html" class="main-link">About</a></li>
+      </ul>
+      <div class="page-head">
+        <div class="pg-head">
+          <h1>Product Detail</h1>
+        </div>
+      </div>
+      <div class="detail-flex">
+        <div style="width:25%;height:60%;border-radius:50%">
+          <img src="http://pngimg.com/uploads/pizza/pizza_PNG44095.png" width="100%" height="100%">
+        </div>
+        <div>
+          <h1 class="p-name">Chilli Pizza</h1>
+          <h1 class="p-price">$ 5.40</h1>
+          <p class="p-desc">Classic marinara sauce, authentic old-world pepperoni, all-natural Italian sausage, slow-roasted ham, hardwood smoked bacon, seasoned pork and beef. Best an our Hand Tossed crust. With more than 50 years of experience under our belts, we understand how to best serve our customers through tried and true service principles. Instead of following trends, we set them. We create food we’re proud to serve and deliver it fast, with a smile.</p>
+        </div>
+        <div style="flex: 0 0 150px">
+          <input type="text" class="quan" value="1" id="myText">
+          <button class="menu-button" onclick="window.location.href='signin.html'">Buy Now</button>
+          <button class="menu-button2" onclick="item()" onclick="window.location.href='pay.html'">Add to Cart</button>
+        </div>
+      </div>
+      <div class="back">
+      <div class="other-info">
+        <div class="desc">
+          <h2 class="p-price" style="color:black;">Description</h2>
+          <h3>Weight: <span class="span">2kg</span></h3>
+          <h3>Dimension: <span class="span">26 x 26 5.5cm</span></h3>
+          <h3>Default Size: <span class="span">Medium</span></h3>
+        </div>
+        <div class="add">
+          <h2 class="p-price" style="color:black;">Additional Information</h2>
+          <select class="size-select">
+            <option>Select Size</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Small</option>
+            <option>Extra Large</option>
+            </select><br><br>
+          <textarea placeholder="Tell your wish about making your pizza....." class="add-info"></textarea>
+        </div>
+      </div>
+      </div>
+      <div class="related">
+        <div style="background-color:transparent;cursor:default;">
+          <h2 class="p-rel">Related Items</h2>
+        </div>
+        <div onclick="window.location.href='detail.html'">
+          <img src="https://pngimage.net/wp-content/uploads/2018/06/pizza-top-view-png-2.png" width="100%" height="50%">
+          <h4 class="rel-name">Diablo<span style="color:#f5c413"> $2.60</span></h4>
+          <p class="rel-name">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+        </div>
+        <div onclick="window.location.href='detail.html'">
+          <img src="http://www.sclance.com/pngs/pizza-png-transparent/pizza_png_transparent_1037890.png" width="100%" height="50%">
+          <h4 class="rel-name">Pepparoni<span style="color:#f5c413"> $2.60</span></h4>
+          <p class="rel-name">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+        </div>
+        <div onclick="window.location.href='detail.html'">
+          <img src="https://www.pizzahero.com.au/wp-content/uploads/2018/05/Garlic-Prawn-new-300.png" width="100%" height="50%">
+          <h4 class="rel-name">Paneeroni<span style="color:#f5c413"> $2.60</span></h4>
+          <p class="rel-name">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+        </div>
+      </div>
+       <div class="keep-in">
+            <h1 id="subs">Subcribe our Vincent Pizza</h1>
+            <div class="submit">
+                <input type="text" placeholder="Email Address" class="email" id="subs_email">
+                <input type="submit" value="Submit" class="submit-button" onclick="subscribe()"> </div>
+            <p class="contact">+1 215 456 15 15.<span style="color:grey;"> 8:00 am – 11:30 pm</span></p>
+            <p class="contact"><a href=""><i class='fab fa-facebook-f' style='font-
+size:24px;color:grey;'></i></a> <a href="" id="soc"><i class='fab fa-twitter'
+style='font-size:24px;color:grey;'></i> </a> <a href="" id="soc"><i class='fab
+fa-instagram' style='font-size:24px;color:grey;'></i> </a> </p>
+            <p style="color:grey;text-align:center;">Copyrights @2018 Vincent.</p>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+      function item() {
+        // body...
+        document.getElementById('demo').innerHTML = document.getElementById("myText").value+ ' '+'Item';
+        alert("Added");
+      }
+    </script>
+        <script type="text/javascript" charset="utf-8">
+        function subscribe(){
+        let sub_email= document.getElementById("subs_email").value;
+        if(sub_email==="")
+        {
+            alert("Enter your correct email address");
+        }
+        else
+        {
+            alert('Thanks for your Subcription');
+        }
+        }
+    </script>
+  </body>
+</html>

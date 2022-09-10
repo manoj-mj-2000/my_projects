@@ -1,0 +1,452 @@
+<html>
+  <head>
+    <title>Vincent Pizza</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <style type="text/css">
+
+      body{
+  background-color:black;
+  font-family: 'PT Sans Narrow', sans-serif;
+  transition:3s;
+}
+.pizza-main{
+  width:1270px;
+  height:100%;
+  margin:auto;
+}
+
+.main-link
+{
+  color:white;
+  text-decoration: none;
+}
+.main-link:hover
+{
+  color:#F5C413;
+}
+.pizza-top-flex {
+  display: flex;
+  width:100%;
+  height:290px;
+}
+
+.pizza-top-flex > div {
+  width:20%;
+  height:50%;
+  margin:auto;
+}
+.ph{
+  color:white;
+  float:left;
+  font-size:120%;
+  margin:0% 0% 0% 5%;
+}
+.cart{
+  color:white;
+  float:right;
+  font-size:120%;
+  margin:3% 0% 0% 5%;
+}
+.pizza-head{
+  z-index:2;
+  width:100%;
+  height:600px;
+  margin-top:5%;
+  display:flex;
+  animation:slider 36s infinite;
+  background-size:cover;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+}
+@keyframes slider{
+  0%
+  {
+    
+    background-image:url(https://www.newsbtc.com/wp-content/uploads/2019/02/shutterstock_795649972-e1550390882768.jpg);
+  }
+    20%
+  {
+    background-image:url(https://www.foodiesfeed.com/wp-content/uploads/2019/02/messy-pizza-on-a-black-table.jpg);
+  }
+  40%
+  {
+    background-image:url(https://static1.squarespace.com/static/5b0c741a4cde7ab1c21658ee/t/5b26b67688251ba762ede1dc/1529263763279/banner6_faded1.jpg?format=2500w);
+  }
+    60%
+  {
+    background-image:url(https://images.squarespace-cdn.com/content/v1/5b0c741a4cde7ab1c21658ee/1560276637527-PXGXCO2JY9AUYKIA0MJZ/ke17ZwdGBToddI8pDm48kCJ5_kLbvYPyF5XCGnps5Rh7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcI-qLl-0j5lk59iXw-sxGohFZ3FMdRNwDgmXFJA_fIMAwNFH4S5soHyvri26ChjjA/banner1_faded1.jpg?format=2500w);
+  }
+    80%
+  {
+    background-image:url(https://www.cheshirepizza.co.uk/images/headers/pizza-dark.jpg);
+  }
+  100%
+  {
+    background-image:url(https://www.cheshirepizza.co.uk/images/headers/pizza-dark.jpg);
+  }
+}
+.pizza-head > div
+{
+  width:40%;
+  height:80%;
+}
+ul{
+  list-style-type:none;
+  text-align:center;
+  color:white;
+  font-size:150%;
+  margin-top:0%
+}
+li{
+  float:left;
+  margin-left:5%;
+}
+.head{
+  COLOR:white;
+  font-size:450%;
+  margin:30% 0% 0% 15%;
+}
+.sub-head{
+    COLOR:white;
+  font-size:250%;
+  margin:0% 0% 0% 15%;
+}
+.menu-button{
+  text-decoration:none;
+  font-size:100%;
+  width:24%;
+  height:8%;
+  color:white;
+  margin:5% 0% 0% 15%;
+  border:2px solid #F5C413;
+  color:#F5C413;
+  background-color:TRANSPARENT;
+}
+.menu-button:hover{
+  color:black;
+  background-color:#f5c413;
+  transition-duration:0.5s;
+  transition-timing-function:ease-out;
+}
+.pizza-feature{
+  width:100%;
+  height:400px;
+  display:flex;
+  position:absolute;
+  opacity:1;
+}
+.pizza-feature > div{
+  width:30%;
+  height:90%;
+  margin-top:auto;
+  text-align:center;
+  padding:0% 5% 0% 5%;
+  border-radius:30px;
+}
+.pizza-feature > div:hover{
+  transition-duration:0.3s;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 10px 6px 20px 10px rgba(0, 0, 0, 0.19);
+}
+.back{
+      width: 100%;
+      height: 400px;
+      position: relative;
+      background-image: url(https://data.whicdn.com/images/257222556/original.jpg);
+      background-attachment: fixed;
+    }
+    .back:before{
+      content: "";
+      position: relative;
+      width: 100%;
+      height: 400px;
+      position: absolute;
+      background-color: #F5C413;
+      opacity: 0.8;
+    }
+.hot-sales{
+  width:100%;
+  height:300px;
+  display:flex;
+}
+.hot-sales > div{
+  width:30%;
+  height:100%;
+  margin-left:auto;
+}
+.pizza-desc{
+ color:white;text-align:center;padding:0% 5% 0% 5%; 
+}
+
+.review-back{
+  position:relative;
+  width:100%;
+  height:400px;
+  margin-top:2%;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-image:url(https://www.just-eat.co.uk/CmsAssets/media/Images/Cuisines/Editorial-981x363/Pizza/MLB_8285.jpg?h=363&w=981&bid=4e787e0c4a1a4f62ab5090d46c83d280&hash=B8F279F6D947A6AC6D76C680A098C45E);
+}
+.review-back{
+      width: 100%;
+      height: 600px;
+      position: relative;
+      background-image: url(https://www.just-eat.co.uk/CmsAssets/media/Images/Cuisines/Editorial-981x363/Pizza/MLB_8285.jpg?h=363&w=981&bid=4e787e0c4a1a4f62ab5090d46c83d280&hash=B8F279F6D947A6AC6D76C680A098C45E);
+border: 2px solid;
+background-attachment: fixed;
+    }
+    .review-back:before{
+      content: "";
+      width: 100%;
+      height: 600px;
+      position: absolute;
+      background-color: #F5C413;
+      opacity: 0.8;
+    }
+.review-front{
+  border:2px solid;
+  width:100%;
+  height:100%;
+  position:absolute;
+  opacity:1;
+}
+
+.review-front> div{
+  width:49%;
+  height:90%;
+  float:left;
+  margin-top:4%;
+}
+.top-review{
+  width:100%;
+  border:1px solid;
+  height:30%;
+  margin-top:3%;
+}
+.small-review{
+  width:100%;
+  height:20%;
+  border:1px solid;
+  margin-top:1%;
+}
+.review-img{
+  width:10%;
+  height:75%;
+  border-radius:50%;
+  margin:1.5% 0% 0% 3%;
+}
+.keep-in{
+  width:100%;
+  height:400px;
+}
+#subs{
+  color:white;
+  text-align:center;
+  margin-top:5%;
+}
+.submit{
+  width:50%;
+  height:15%;
+  border:1px solid grey;
+  margin:5% auto auto auto;
+}
+input[type=text]{
+  color:white;
+  background-color:transparent;
+  width:80%;
+  height:100%;
+  border:0px;
+  padding-left:2%;
+}
+input[type=submit]{
+  width:15%;
+  height:100%;
+  background-color:#2e2e2e;
+  color:white;
+  border:0;
+  margin-left:4.3%;
+}
+input[type=submit]:hover{
+  background-color:#ffbb00;
+  color:black;
+  transition-duration:0.5s;
+  animation-name: wob-skew;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+@keyframes wob-skew{
+  15%{
+    transform: skewX(22deg);
+  }
+  60%{
+    transform: skewX(-24deg);
+  }
+  100%{
+    transform: skewX(0deg);
+  }
+}
+.contact{
+  color:white;
+  text-align:center;
+  margin-top:3%;
+  font-size:120%;
+}
+#soc{
+  margin-left:2%;
+}
+@media only screen and (max-width: 600px) {
+.pizza-main {
+width:100vw;
+}
+.hot-sales
+{
+    height:50vh;
+    flex-wrap: flex-wrap;
+}
+li
+{
+    margin-left:5%;
+}
+}
+
+    </style>
+
+  </head>
+  <body>
+    <div class="pizza-main">
+      <div class="pizza-top-flex">
+        <div style="padding-top:10%">
+          <i class='fas fa-mobile-alt' style="font-size:48px;color:#ffbb00;float:left"></i>
+          <div class="ph">+1 215 456 15 15<br>
+<span style="color:grey;font-size:90%">8:00 am – 11:30 pm</span>
+</div>
+        </div>
+        <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/logo.png" width="100%" height="100%"></div>
+        <div style="padding-top:10%">
+          <div class="cart"></div>
+          <a href="menu.html"><i class="fab fa-opencart" style="font-size:36px;color:#ffbb00;float:right"></i>
+        </a></div>
+      </div>
+        <ul>
+        <li style="margin-left:28%;"><a href="index.html" class="main-link">Home</a></li>
+        <li><a href="menu.html" class="main-link">Menu</a></li>
+        <li><a href="detail.html" class="main-link">Shop</a></li>
+        <li><a href="contact.html" class="main-link">Contact</a></li>
+        <li><a href="about.html" class="main-link">About</a></li>
+        </ul>
+      <div class="pizza-head">
+        <div style="margin:4% 0% 0% 5%">
+          <p class="head">VINCENT PIZZA</p>
+          <p class="sub-head"><u>Making People Happy</u> :)</p><button class="menu-button" onclick="window.location.href='menu.html'"><b>View Menu ></b>
+          </button>
+        </div>
+        <div style="margin:4% 0% 0% 7%"> 
+          <img src="https://i.dlpng.com/static/png/116141_preview.png" width="100%" height="100%">          
+        </div>
+      </div>
+      <div class="back">
+        <div class="pizza-feature">
+<div>
+   <img src="https://image.flaticon.com/icons/png/512/45/45332.png" width="50%" height="50%">
+   <p><strong>Quality Food</strong></p>
+   <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+</div>
+<div>
+   <img src="https://cdn0.iconfinder.com/data/icons/driver-delivery-jobs-occupations-careers/273/occupation-05-007-512.png" width="50%" height="50%">
+   <p><strong>Fast Delivery</strong></p>
+   <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+</div>
+<div>
+   <img src="https://www.freeiconspng.com/uploads/pizza-icon-16.png" width="50%" height="45%">
+   <p><strong>Original Recipe</strong></p>
+   <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+</div>
+          
+        </div>
+      </div>
+      <div>
+        <p style="color:white;text-align:center;font-size:250%">Hot Sales</p>
+        <div class="hot-sales">
+        <div>
+          <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/6-600x600.png" width="50%" height="50%" style="margin:0% 0% 0% 25%;">
+          <h2 align="center" style="color:white;"><a href="menu.html" class="main-link">Diablo</a></h2>
+          <p class="pizza-desc">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita<br><br><b>$3.50</b></p>
+          </div>
+        <div>
+          <img src="http://pngimg.com/uploads/pizza/pizza_PNG44092.png" width="50%" height="50%" style="margin:0% 0% 0% 25%;">
+          <h2 align="center" style="color:white;"><a href="menu.html" class="main-link">Farm House</a></h2>
+          <p class="pizza-desc">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita<br><br><b>$3.50</b></p>
+          </div>
+        <div>
+          <img src="https://d2mekbzx20fc11.cloudfront.net/uploads/web.Szechuan-Chilli-Prawn_600x600.png" width="50%" height="50%" style="margin:0% 0% 0% 25%;">
+          <h2 align="center" style="color:white;"><a href="menu.html" class="main-link">Veg Extravaganza</a></h2>
+          <p class="pizza-desc">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita<br><br><b>$3.50</b></p>
+          </div>
+        <div>
+          <img src="https://www.sccpre.cat/mypng/full/46-468822_glute-free-house-can-can-pizza.png" width="50%" height="50%" style="margin:0% 0% 0% 25%;">
+          <h2 align="center" style="color:white;"><a href="menu.html" class="main-link">Paneer Makhani</a></h2>
+          <p class="pizza-desc">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita<br><br><b>$3.50</b></p>
+          </div>
+        </div> 
+      </div>
+      <div class="review-back">
+        <div class="review-front">
+          <div>
+          <p style="padding:0% 0% 0% 5%;font-size:250%">We Are Vincent</p>
+          <p style="padding:0% 5% 0% 5%;font-variant: small-caps;font-size:150%;text-align:justify;">we don’t just make pizza. We make people’s days. Vincent Pizzeria was built on the belief that pizza should be special, and we carry that belief into everything we do.</p>
+          <p style="padding:0% 5% 0% 5%;font-variant: normal;font-size:110%;text-align:justify;">
+            What’s our purpose at Vincent? Moments of Excitement. All made possible by our flavor, innovation and, most importantly, by unlocking potential in our team members.<br><br>
+
+With more than 50 years of experience under our belts, we understand how to best serve our customers through tried and true service principles. Instead of following trends, we set them. We create food we’re proud to serve and deliver it fast, with a smile. No matter where you find us, we’re making sure each meal our customers enjoy is delicious and one-of-a-kind.
+          </p>
+        </div>
+        <div>
+          <div class="top-review">
+            <p style="padding:0% 3% 0% 3%">Vincent was one of the first restaurants I discovered upon moving to New York last summer, and it remains a favorite. Despite its sizable menu full of pastas, sandwiches, and pizzas, I almost always get the same thing – the Vincent pizza. It’s made with Ricotta & Marinara sauces, spiced with oregano, and topped with eggplant, red onions, basil, Pecorino Romano & Mozzarella. It really is one of the best pizzas I’ve ever had – and I eat a lot of pizza.</p>
+          </div>
+          <div class="small-review" style="border:0px">
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/testimonial_1-200x200.jpg" width="10%" height="60%" style="border-radius:50%;margin-top:2%">
+             <p style="margin:-9% 0% 0% 15%">ADAM JEFFERSON<BR>
+Lawyer, New York</p>
+          </div>
+          <div class="small-review">
+            <p style="padding:0% 3% 0% 3%">The pizza is delicious! The crust is thin and crispy, great sauce, and awesome cheese blend. And it makes a cute cheap date!</p>
+          </div>
+          <div class="small-review" style="border:0px">
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/testimonial_2-200x200.jpg" width="10%" height="60%" style="border-radius:50%;margin-top:2%">
+            <p style="margin:-9% 0% 0% 15%">SAMANTHA GREENBERG<BR>
+Artist, Boston</p>          
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="keep-in">
+            <h1 id="subs">Subcribe our Vincent Pizza</h1>
+            <div class="submit">
+                <input type="text" placeholder="Email Address" id="subs_email">
+                <input type="submit" value="Submit" onclick="subscribe()"> </div>
+            <p class="contact">+1 215 456 15 15.<span style="color:grey;"> 8:00 am – 11:30 pm</span></p>
+            <p class="contact"><a href=""><i class='fab fa-facebook-f' style='font-
+size:24px;color:grey;'></i></a> <a href="" id="soc"><i class='fab fa-twitter'
+style='font-size:24px;color:grey;'></i> </a> <a href="" id="soc"><i class='fab
+fa-instagram' style='font-size:24px;color:grey;'></i> </a> </p>
+            <p style="color:grey;text-align:center;">Copyrights @2018 Vincent.</p>
+        </div>
+
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        function subscribe(){
+        let sub_email= document.getElementById("subs_email").value;
+        if(sub_email==="")
+        {
+            alert("Enter your correct email address");
+        }
+        else
+        {
+            alert('Thanks for your Subcription');
+        }
+        }
+    </script>
+  </body>
+</html>

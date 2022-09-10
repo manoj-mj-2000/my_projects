@@ -1,0 +1,705 @@
+<html>
+  <head>
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <style type="text/css">
+      html
+      {
+          scroll-behavior: smooth;
+      }
+      body{
+  background-color:black;
+  font-family: 'PT Sans Narrow', sans-serif;
+
+}
+.pizza-main{
+  width:1270px;
+  height:100%;
+  margin:auto;
+}
+.main-link
+{
+  color:white;
+  text-decoration: none;
+}
+.main-link:hover
+{
+  color:#F5C413;
+}
+.pizza-top-flex {
+  display: flex;
+  width:100%;
+  height:290px;
+}
+
+.pizza-top-flex > div {
+  width:20%;
+  height:50%;
+  margin:auto;
+}
+.ph{
+  color:white;
+  float:left;
+  font-size:120%;
+  margin:0% 0% 0% 5%;
+}
+.cart{
+  color:white;
+  float:right;
+  font-size:120%;
+  margin:3% 0% 0% 5%;
+}
+.pizza-head{
+  width:100%;
+  height:600px;
+  margin-top:5%;
+  background-image:url(https://us.123rf.com/450wm/alexandernedviga/alexandernedviga1708/alexandernedviga170800091/83413785-textura-transparente-de-la-superficie-de-madera-oscura-fondo-oscuro-del-panel-del-tablero-de-madera-.jpg?ver=6);
+  display:flex;
+  background-attachment: fixed;
+}
+.pizza-head > div
+{
+  width:40%;
+  height:80%;
+}
+ul{
+  list-style-type:none;
+  text-align:center;
+  color:white;
+  font-size:150%;
+  margin-top:0%
+}
+li{
+  float:left;
+  margin-left:5%;
+}
+.page-head{
+  width: 100%;
+  height: 250px;
+  margin-top:5%;
+  background-image: url(https://enzospizzaco.com/images/award-winning-pizza-catering-no-video.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+}
+.page-head:before{
+  content: "";
+  width: 1275px;
+  height: 250px;
+  position:absolute;
+  background-color: #F5C413;
+  opacity: 0.8;
+}
+.pg-head
+{
+  width:1275px;
+  position:absolute;
+  height:100%;
+  font-size:300%;
+  text-align:center;
+  padding:auto;
+  height: 0px;
+}
+.menu-list
+{
+  border:1px solid white;
+  width:100%;
+  height:50px;
+  margin-top:2%;
+}
+.ul{
+  margin:2% 0% 2% 0%;
+}
+.menu{
+  margin-top:2%;
+  width:100%;
+  height:1200px;
+  display:flex;
+  flex-wrap:wrap;
+}
+.menu > div{
+  width:25%;
+  height:30%;
+  text-align:center;
+  margin:auto;
+  color:white;
+}
+.image{
+  width:50%;
+  height:45%;
+  margin-left:5%;
+  border-radius:50%;
+}
+.pizza-feature{
+  width:100%;
+  height:400px;
+  display:flex;
+  position:absolute;
+  opacity:1;
+}
+.pizza-feature > div{
+  width:30%;
+  height:90%;
+  margin-top:auto;
+  text-align:center;
+  padding:0% 5% 0% 5%;
+  border-radius:30px;
+}
+.pizza-feature > div:hover{
+  transition-duration:0.3s;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 10px 6px 20px 10px rgba(0, 0, 0, 0.19);
+}
+.back{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-image: url(https://data.whicdn.com/images/257222556/original.jpg);
+  background-attachment: fixed;
+}
+.back:before{
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  background-color: #F5C413;
+  opacity: 0.8;
+}
+.keep-in{
+  width:100%;
+  height:400px;
+}
+#subs{
+  color:white;
+  text-align:center;
+  margin-top:5%;
+}
+.submit{
+  width:50%;
+  height:15%;
+  border:1px solid grey;
+  margin:5% auto auto auto;
+}
+input[type=text]{
+  color:white;
+  background-color:transparent;
+  width:80%;
+  height:100%;
+  border:0px;
+  padding-left:2%;
+}
+input[type=submit]{
+  width:15%;
+  height:100%;
+  background-color:#2e2e2e;
+  color:white;
+  border:0;
+  margin-left:4.3%;
+}
+input[type=submit]:hover{
+  background-color:#ffbb00;
+  color:black;
+  transition-duration:0.5s;
+  animation-name: wob-skew;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+@keyframes wob-skew{
+  15%{
+    transform: skewX(22deg);
+  }
+  60%{
+    transform: skewX(-24deg);
+  }
+  100%{
+    transform: skewX(0deg);
+  }
+}
+.contact{
+  color:white;
+  text-align:center;
+  margin-top:3%;
+  font-size:120%;
+}
+#soc{
+  margin-left:2%;
+}
+    </style>
+
+  </head>
+  <body>
+    <div class="pizza-main">
+      <div class="pizza-top-flex">
+        <div style="padding-top:10%">
+          <i class='fas fa-mobile-alt' style="font-size:48px;color:#ffbb00;float:left"></i>
+          <div class="ph">+1 215 456 15 15<br>
+            <span style="color:grey;font-size:90%">8:00 am – 11:30 pm</span>
+          </div>
+        </div>
+        <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/logo.png" width="100%" height="100%"></div>
+        <div style="padding-top:10%">
+          <div class="cart"></div>
+          <a href=""><i class="fab fa-opencart" style="font-size:36px;color:#ffbb00;float:right"></i></a>
+        </div>
+      </div>
+      <ul>
+        <li style="margin-left:28%;"><a href="index.html" class="main-link">Home</a></li>
+        <li><a href="menu.html" class="main-link">Menu</a></li>
+        <li><a href="detail.html" class="main-link">Shop</a></li>
+        <li><a href="contact.html" class="main-link">Contact</a></li>
+        <li><a href="about.html" class="main-link">About</a></li>
+      </ul>
+      <div class="page-head">
+        <div class="pg-head">
+          <h1  id="so-top">Discover Menu</h1>
+        </div>
+      </div>
+      <div>
+      <ul class="ul">
+        <li style="margin-left:22%;"><a href="#first" class='main-link'>Pizzas</a></li>
+        <li><a href="#second" class='main-link'>Burgers</a></li>
+        <li><a href="#third" class='main-link'>Deserts</a></li>
+        <li><a href="#fourth" class='main-link'>Salads</a></li>
+        <li><a href="#fiveth" class='main-link'>Pastas</a></li>
+        <li><a href="#sixth" class='main-link'>Drinks</a></li>
+      </ul>
+      </div>
+      <br><h1 style="color: #F5C413;text-align: center;margin-top: 5%" id="first">Pizzas</h1>
+      <div class="menu">
+          <div>
+            <img src="http://pngimg.com/uploads/pizza/pizza_PNG44092.png" class="image">
+            <a href="detail.html" class="main-link"><h3>MAGHERITA</h3></a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://dumielauxepices.net/sites/default/files/killzone-clipart-pizza-656913-4342094.png" class="image">
+            <a href="detail.html" class="main-link"><h3>VINCENT</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3> 
+          </div>
+          <div><img src="https://pngimage.net/wp-content/uploads/2018/06/pizza-top-view-png-2.png" class="image">
+            <a href="detail.html" class="main-link"><h3>DIABLO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://d2mekbzx20fc11.cloudfront.net/uploads/web.Szechuan-Chilli-Prawn_600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CARBONARA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://www.sclance.com/pngs/pizza-png-transparent/pizza_png_transparent_1037890.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PEPPERONI</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://www.pizzahero.com.au/wp-content/uploads/2018/05/Garlic-Prawn-new-300.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CAPRICCIOSA</h3> </a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://www.sccpre.cat/mypng/full/46-468822_glute-free-house-can-can-pizza.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PROSCIUTTO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://pngimage.net/wp-content/uploads/2018/06/pizza-top-view-png-5.png" class="image">
+            <a href="detail.html" class="main-link"><h3>SAPORITA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://ui-ex.com/images/transparent-pizza-top-view-1.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CALZONE</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://pngimage.net/wp-content/uploads/2018/06/pizza-top-view-png-1.png" class="image">
+            <a href="detail.html" class="main-link"><h3>NEAPOLITANO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://banner2.kisspng.com/20180125/ree/kisspng-new-york-style-pizza-italian-cuisine-take-out-pizz-pizza-5a6a4b7e98f5e4.9002910815169155826265.jpg" class="image">
+            <a href="detail.html" class="main-link"><h3>TARANTELLA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="https://d2mekbzx20fc11.cloudfront.net/uploads/web.Capricciosa_600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>FORTEZZA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+      </div>
+      <h1 style="color: #F5C413;text-align: center;" id="second">Buggers <span><a href="#so-top" class='main-link' style="font-size: 15px">Back to top</a></span></h1>
+      <div class="menu">
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/12-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>Vincent</h3></a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/11-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>MARGHERITA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3> 
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/10-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>DIABLO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/9-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CARBONARA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/8-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PEPPERONI</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/7-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CAPRICCIOSA</h3> </a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/6-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PROSCIUTTO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/5-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>SAPORITA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/4-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CALZONE</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/2-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>NEAPOLITANO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/1-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>TARANTELLA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/3-3-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>FORTEZZA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+      </div>
+      <h1 style="color: #F5C413;text-align: center;" id="third">Deserts <span><a href="#so-top" class='main-link' style="font-size: 15px">Back to top</a></span></h1>
+      <div class="menu">
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/12-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>MAGHERITA</h3></a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/11-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>VINCENT</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3> 
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/10-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>DIABLO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/9-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CARBONARA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/8-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PEPPERONI</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/7-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CAPRICCIOSA</h3> </a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/6-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PROSCIUTTO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/5-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>SAPORITA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/4-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CALZONE</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/3-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>NEAPOLITANO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/2-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>TARANTELLA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/deserts/1-4-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>FORTEZZA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+      </div>
+      <h1 style="color: #F5C413;text-align: center;" id="fourth">Salads <span><a href="#so-top" class='main-link' style="font-size: 15px">Back to top</a></span></h1>
+      <div class="menu">
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/12-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>MAGHERITA</h3></a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/11-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>VINCENT</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3> 
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/10-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>DIABLO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/9-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CARBONARA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/8-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PEPPERONI</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/7-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CAPRICCIOSA</h3> </a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/6-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PROSCIUTTO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/5-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>SAPORITA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/4-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CALZONE</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/3-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>NEAPOLITANO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/2-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>TARANTELLA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/salads/1-1-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>FORTEZZA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+      </div>
+      <h1 style="color: #F5C413;text-align: center;" id="fiveth">Pastas <span><a href="#so-top" class='main-link' style="font-size: 15px">Back to top</a></span></h1>
+      <div class="menu">
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/12-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>MAGHERITA</h3></a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/11-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>VINCENT</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3> 
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/10-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>DIABLO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/9-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CARBONARA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/8-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PEPPERONI</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/7-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CAPRICCIOSA</h3> </a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/6-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PROSCIUTTO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/5-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>SAPORITA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/4-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CALZONE</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/3-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>NEAPOLITANO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/2-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>TARANTELLA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/pasta/1-2-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>FORTEZZA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+      </div>
+      <h1 style="color: #F5C413;text-align: center;" id="sixth">Drinks <span><a href="#so-top" class='main-link' style="font-size: 15px">Back to top</a></span></h1>
+      <div class="menu">
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/1-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>MAGHERITA</h3></a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/2-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>VINCENT</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3> 
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/3-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>DIABLO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/4-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CARBONARA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/5-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PEPPERONI</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/6-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CAPRICCIOSA</h3> </a>
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/7-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>PROSCIUTTO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/8-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>SAPORITA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/9-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>CALZONE</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/10-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>NEAPOLITANO</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/11-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>TARANTELLA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+          <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/drinks/12-5-600x600.png" class="image">
+            <a href="detail.html" class="main-link"><h3>FORTEZZA</h3></a> 
+            <p style="padding:0% 5% 0% 5%">Classic marinara sauce, authentic old-world pepperoni, all-natural Ita</p>
+            <h3>$2.50</h3>
+          </div>
+      </div>
+      <br>
+      <center><a href="#so-top" class='main-link'><p>Back to top</p></a></center>
+      <br>
+      <div class="back">
+
+        <div class="pizza-feature">
+          <div>
+            <img src="https://image.flaticon.com/icons/png/512/45/45332.png" width="50%" height="50%">
+            <p><strong>Quality Food</strong></p>
+            <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+          </div>
+          <div>
+            <img src="https://cdn0.iconfinder.com/data/icons/driver-delivery-jobs-occupations-careers/273/occupation-05-007-512.png" width="50%" height="50%">
+            <p><strong>Fast Delivery</strong></p>
+            <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+          </div>
+          <div>
+            <img src="https://www.freeiconspng.com/uploads/pizza-icon-16.png" width="50%" height="45%">
+            <p><strong>Original Recipe</strong></p>
+            <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="keep-in">
+            <h1 id="subs">Subcribe our Vincent Pizza</h1>
+            <div class="submit">
+                <input type="text" placeholder="Email Address" id="subs_email">
+                <input type="submit" value="Submit" onclick="subscribe()"> </div>
+            <p class="contact">+1 215 456 15 15.<span style="color:grey;"> 8:00 am – 11:30 pm</span></p>
+            <p class="contact"><a href=""><i class='fab fa-facebook-f' style='font-
+size:24px;color:grey;'></i></a> <a href="" id="soc"><i class='fab fa-twitter'
+style='font-size:24px;color:grey;'></i> </a> <a href="" id="soc"><i class='fab
+fa-instagram' style='font-size:24px;color:grey;'></i> </a> </p>
+            <p style="color:grey;text-align:center;">Copyrights @2018 Vincent.</p>
+        </div>
+      
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        function subscribe(){
+        let sub_email= document.getElementById("subs_email").value;
+        if(sub_email==="")
+        {
+            alert("Enter your correct email address");
+        }
+        else
+        {
+            alert('Thanks for your Subcription');
+        }
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,468 @@
+<html>
+  <head>
+    <title>Payemnt Gateway</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <style type="text/css">
+
+    body{
+  background-color:black;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.pizza-main{
+  width:1270px;
+  height:100%;
+  margin:auto;
+}
+.main-link
+{
+  color:white;
+  text-decoration: none;
+}
+.main-link:hover
+{
+  color:#F5C413;
+}
+.pizza-top-flex {
+  display: flex;
+  width:100%;
+  height:290px;
+}
+
+.pizza-top-flex > div {
+  width:20%;
+  height:50%;
+  margin:auto;
+}
+.ph{
+  color:white;
+  float:left;
+  font-size:120%;
+  margin:0% 0% 0% 5%;
+}
+.cart{
+  color:white;
+  float:right;
+  font-size:120%;
+  margin:3% 0% 0% 5%;
+}
+.pizza-head{
+  width:100%;
+  height:600px;
+  margin-top:5%;
+  background-image:url(https://us.123rf.com/450wm/alexandernedviga/alexandernedviga1708/alexandernedviga170800091/83413785-textura-transparente-de-la-superficie-de-madera-oscura-fondo-oscuro-del-panel-del-tablero-de-madera-.jpg?ver=6);
+  display:flex;
+  background-attachment: fixed;
+}
+.pizza-head > div
+{
+  width:40%;
+  height:80%;
+}
+ul{
+  list-style-type:none;
+  text-align:center;
+  color:white;
+  font-size:150%;
+  margin-top:0%
+}
+li{
+  float:left;
+  margin-left:5%;
+}
+.page-head{
+  width: 100%;
+  height: 250px;
+  margin-top:5%;
+  background-image: url(https://enzospizzaco.com/images/award-winning-pizza-catering-no-video.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+}
+.page-head:before{
+  content: "";
+  width: 1275px;
+  height: 250px;
+  position:absolute;
+  background-color: #F5C413;
+  opacity: 0.8;
+}
+.pg-head
+{
+  width:1275px;
+  position:absolute;
+  height:100%;
+  font-size:300%;
+  text-align:center;
+  padding:auto;
+  height: 0px;
+}
+.detail-flex
+{
+  border:0px solid white;
+  width:100%;
+  height:500px;
+  display:flex;
+  justify-content:center;
+}
+.detail-flex > div
+{
+  width:30%;
+  height:100%;
+  margin:5% 0% 0% 2%;
+}
+
+.menu-button{
+  text-decoration:none;
+  font-size:100%;
+  width:80%;
+  height:10%;
+  color:white;
+  margin:10% 10% 10% 10%;
+  border:2px solid #F5C413;
+  color:#F5C413;
+  background-color:TRANSPARENT;
+}
+.menu-button:hover{
+  color:black;
+  background-color:#f5c413;
+  transition-duration:0.5s;
+  transition-timing-function:ease-out;
+}
+.menu-button2{
+  text-decoration:none;
+  border:0px;
+  font-size:100%;
+  width:80%;
+  height:10%;
+  margin:10%;
+  color:white;
+  color:black;
+  background-color:#f5c413;
+}
+.menu-button2:hover{
+  border:2px solid #F5C413;
+  background-color:transparent;
+  color:#F5C413;
+  transition-duration:0.5s;
+}
+.quan{
+  width:25%;
+  height:8%;
+  background-color:transparent;
+  border:2px solid #f5c413;
+  margin:80% 10% 10% 10%;
+  color:#f5c413;
+  padding:0% 0% 0% 7%;
+  font-size:150%;
+}
+.p-name{
+  color:white;
+  font-size:250%;
+}
+.p-price{
+  color:#f5c413;
+}
+.p-desc{
+  color:white;
+  font-size:110%;
+}
+.pay
+{
+  width:100%;
+  height:300px;
+  display:flex;
+}
+.pay > div
+{
+  width:30%;
+  height:100%;
+  margin:auto
+}
+.info-head
+{
+  color:#f5c413;
+  text-align:left;
+  font-size:150%;
+}
+.info-label
+{
+    color:#f5c413;
+  text-align:left;
+}
+.info-label2
+{
+  color:#f5c413;
+  text-align:left;
+  font-size:150%;
+  margin:0% 5% 5% 5%;
+}
+.info-but
+{
+  background-color: #f5c413;
+  color:black;
+  padding:10px;
+  border:1px solid;
+}
+.info-but:hover
+{
+  border:2px solid #F5C413;
+  background-color:transparent;
+  color:#F5C413;
+  transition-duration:0.5s;
+}
+.info-text
+{
+  background-color:black;
+  color:#f5c413;
+  border:2px solid #f5c413;
+  margin:0% 0% 0% 5%;
+  padding:5px; 
+  float:right;
+}
+.info-textarea
+{
+  background-color:black;
+  color:#f5c413;
+  border:2px solid #f5c413;
+  margin:0% 0% 0% 5%;
+  padding:5px; 
+  float:right;
+  width:70%;
+}
+#hide-div
+{
+  width: 25%;
+  height: 300px;
+  border:1px solid;
+  margin: auto;
+  display: none;
+}
+.img-animate
+{
+  width: 100%;
+  height: 100%; 
+  border-radius: 10px;
+}
+
+.keep-in{
+  width:100%;
+  height:400px;
+}
+#subs{
+  color:white;
+  text-align:center;
+  margin-top:5%;
+}
+.submit{
+  width:50%;
+  height:15%;
+  border:1px solid grey;
+  margin:5% auto auto auto;
+}
+.email{
+  color:white;
+  background-color:transparent;
+  width:80%;
+  height:100%;
+  border:0px;
+  padding-left:2%;
+}
+.submit-button{
+  width:15%;
+  height:100%;
+  background-color:#2e2e2e;
+  color:white;
+  border:0;
+  margin-left:4.3%;
+}
+input[type=submit]:hover{
+  background-color:#ffbb00;
+  color:black;
+  transition-duration:0.5s;
+  animation-name: wob-skew;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+@keyframes wob-skew{
+  15%{
+    transform: skewX(22deg);
+  }
+  60%{
+    transform: skewX(-24deg);
+  }
+  100%{
+    transform: skewX(0deg);
+  }
+}
+.contact{
+  color:white;
+  text-align:center;
+  margin-top:3%;
+  font-size:120%;
+}
+#soc{
+  margin-left:2%;
+}
+.p-rel{
+  color:#f5c413;
+  text-align:center;
+  margin-top:80%;
+}
+.rel-name{
+  color:white;
+  text-align:center;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="pizza-main">
+      <div class="pizza-top-flex">
+        <div style="padding-top:10%">
+          <i class='fas fa-mobile-alt' style="font-size:48px;color:#ffbb00;float:left"></i>
+          <div class="ph">+1 215 456 15 15<br>
+            <span style="color:grey;font-size:90%">8:00 am – 11:30 pm</span>
+          </div>
+        </div>
+        <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/logo.png" width="100%" height="100%"></div>
+        <div style="padding-top:10%">
+          <div class="cart"></div>
+          <a href="menu.html"><i class="fab fa-opencart" style="font-size:36px;color:#ffbb00;float:right"></i>
+        </a></div>
+      </div>
+      <ul>
+        <li style="margin-left:28%;"><a href="index.html" class="main-link">Home</a></li>
+        <li><a href="menu.html" class="main-link">Menu</a></li>
+        <li><a href="detail.html" class="main-link">Shop</a></li>
+        <li><a href="contact.html" class="main-link">Contact</a></li>
+        <li><a href="about.html" class="main-link">About</a></li>
+      </ul>
+      <div class="page-head">
+        <div class="pg-head">
+          <h1>Payment Gateway</h1>
+        </div>
+      </div>
+            <div class="detail-flex">
+        <div style="width:25%;height:60%;border-radius:50%">
+          <img src="http://pngimg.com/uploads/pizza/pizza_PNG44095.png" width="100%" height="100%">
+        </div>
+        <div>
+          <h1 class="p-name">Chilli Pizza</h1>
+          <h1 class="p-price">$ 5.40</h1>
+          <p class="p-desc">Classic marinara sauce, authentic old-world pepperoni, all-natural Italian sausage, slow-roasted ham, hardwood smoked bacon, seasoned pork and beef. Best an our Hand Tossed crust. With more than 50 years of experience under our belts, we understand how to best serve our customers through tried and true service principles. Instead of following trends, we set them. We create food we’re proud to serve and deliver it fast, with a smile.</p>
+        </div>
+        
+      </div>
+      <h1 style="color:white;text-align:center;">Payment Gateway</h1>
+      <div class="pay">
+        <div>
+          <fieldset>
+            <legend class="info-head">Method of Payemnt</legend>  
+            <label class="info-label">Choose the method of payment</label>
+            <br><br>
+            <input type="radio" name="pay" id="credit" checked>
+            <label for="credit" class="info-label2">Credit Card</label>
+            <br><br>
+            <input type="radio" name="pay" id="debit">
+            <label for="debit" class="info-label2">Debit Card</label>
+            <br><br>
+            <input type="radio" name="pay" id="br">
+            <label for="ib" class="info-label2">Book and Reserve</label>
+          </fieldset>
+          
+        </div>
+        <div>
+          <fieldset>
+            <legend class="info-head">Payment Info</legend>  
+            <br>
+            <label class="info-label">Card Number</label>
+            <input type="text" placeholder="Card Number" class="info-text" id="card-no">
+            <br><br>
+            <label class="info-label">CCV / CVV</label>
+            <input type="password" placeholder="CCV / CVV" class="info-text" id="ccv">
+            <br><br>
+            <label class="info-label">Expiry Date</label>
+            <input type="date" placeholder="Card Number" class="info-text" id="exp-date">
+            <br><br>
+            <label class="info-label">Account Name</label>
+            <input type="text" placeholder="Account Holder Name" class="info-text" id="acc-name">
+          </fieldset>
+          <br>
+          <center>
+            <input type="button" class="info-but" value="Submit" onclick="show()">
+          </center>
+        </div>
+        <div>
+          <fieldset>
+            <legend class="info-head">Order Info</legend>  
+            <br>
+            <label class="info-label">Name</label>
+            <input type="text" placeholder="Your Name" class="info-text" id="del-name">
+            <br><br>
+            <label class="info-label">Contact Number</label>
+            <input type="text" placeholder="Number" class="info-text" id="del-cont">
+            <br><br><br>
+            <label class="info-label">Address</label>
+            <textarea placeholder="Address" class="info-textarea" id="del-addr"></textarea>
+          </fieldset>
+          
+        </div>
+      </div>
+      <div id="hide-div">
+        <img src="https://i.pinimg.com/originals/de/4a/90/de4a9060d587b1e7d18d2048c1eec080.gif" class="img-animate">
+      </div>
+      <div class="keep-in">
+            <h1 id="subs">Subcribe our Vincent Pizza</h1>
+            <div class="submit">
+                <input type="text" placeholder="Email Address" class="email" id="subs_email">
+                <input type="submit" value="Submit" class="submit-button" onclick="subscribe()"> </div>
+            <p class="contact">+1 215 456 15 15.<span style="color:grey;"> 8:00 am – 11:30 pm</span></p>
+            <p class="contact"><a href=""><i class='fab fa-facebook-f' style='font-
+size:24px;color:grey;'></i></a> <a href="" id="soc"><i class='fab fa-twitter'
+style='font-size:24px;color:grey;'></i> </a> <a href="" id="soc"><i class='fab
+fa-instagram' style='font-size:24px;color:grey;'></i> </a> </p>
+            <p style="color:grey;text-align:center;">Copyrights @2018 Vincent.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+      function show() {
+        // body...
+        var hide=document.getElementById('hide-div');
+        let pay_card_no=document.getElementById('card-no').value;
+        let pay_ccv=document.getElementById('ccv').value;
+        let pay_exp=document.getElementById('exp-date').value;
+        let pay_acc_name=document.getElementById('acc-name').value;
+        let deliver_name=document.getElementById('del-name').value;
+        let deliver_cont=document.getElementById('del-cont').value;
+        let deliver_addr=document.getElementById('del-addr').value;
+        if (pay_card_no==="" && pay_ccv==="" && pay_acc_name==="") 
+        {
+          alert("Enter valid payment details")
+        } 
+        else {
+          if (deliver_name==="" && deliver_cont==="" && deliver_addr==="")
+          {
+            alert("Enter valid details for delivery");
+          } 
+          else 
+          {            
+            hide.style.display="block";
+          }          
+        }
+      }
+    </script>
+        <script type="text/javascript" charset="utf-8">
+        function subscribe(){
+        let sub_email= document.getElementById("subs_email").value;
+        if(sub_email==="")
+        {
+            alert("Enter your correct email address");
+        }
+        else
+        {
+            alert('Thanks for your Subcription');
+        }
+        }
+    </script>
+  </body>
+</html>

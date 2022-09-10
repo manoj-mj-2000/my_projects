@@ -1,0 +1,383 @@
+<html>
+  <head>
+    <title>About</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <style type="text/css">
+      
+body{
+background-color:black;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+.pizza-main{
+  width:1275px;
+  height:100%;
+  margin:auto;
+}
+.pizza-top-flex {
+  display: flex;
+  width:100%;
+  height:290px;
+}
+.main-link
+{
+  color:white;
+  text-decoration: none;
+}
+.main-link:hover
+{
+  color:#F5C413;
+}
+.pizza-top-flex > div {
+  width:20%;
+  height:50%;
+  margin:auto;
+}
+.ph{
+  color:white;
+  float:left;
+  font-size:120%;
+  margin:0% 0% 0% 5%;
+}
+.cart{
+  color:white;
+  float:right;
+  font-size:120%;
+  margin:3% 0% 0% 5%;
+}
+.pizza-head{
+  width:100%;
+  height:600px;
+  margin-top:5%;
+  background-image:url(https://us.123rf.com/450wm/alexandernedviga/alexandernedviga1708/alexandernedviga170800091/83413785-textura-transparente-de-la-superficie-de-madera-oscura-fondo-oscuro-del-panel-del-tablero-de-madera-.jpg?ver=6);
+  display:flex;
+}
+.pizza-head > div
+{
+  width:40%;
+  height:80%;
+}
+ul{
+  list-style-type:none;
+  text-align:center;
+  color:white;
+  font-size:150%;
+  margin-top:0%
+}
+li{
+  float:left;
+  margin-left:5%;
+}
+.page-head{
+  width: 100%;
+  height: 250px;
+  margin-top:5%;
+  background-image: url(https://enzospizzaco.com/images/award-winning-pizza-catering-no-video.jpg);  
+  background-size:cover;
+    background-attachment: fixed;
+}
+.page-head:before{
+  content: "";
+  width: 1275px;
+  height: 250px;
+  position:absolute;
+  background-color: #F5C413;
+  opacity: 0.8;
+}
+.pg-head
+{
+  width:1275px;
+  position:absolute;
+  height:100%;
+  font-size:300%;
+  text-align:center;
+  padding:auto;
+}
+.philos-flex
+{
+  width:100%;
+  height:600px;
+  display:flex;
+  margin-top:5%;
+}
+.philos-flex > div{
+  width:33.3%;
+}
+.philo-head{
+  color:white;
+  font-size:250%;
+}
+.all-cap-philo
+{
+  margin-top:10%;
+  color:white;
+  font-variant:small-caps;
+  font-size:20px;
+  padding:0px 15px 0px 15px;
+  letter-spacing:3px;
+}
+.hr{
+  border:1px solid grey;
+  width:70%;
+  margin-top:10%
+}
+.para
+{
+  color:white;
+  padding:0px 25px 0px 25px;
+  font-size:19px;
+  letter-spacing:3px;
+  margin-top:15%;
+}
+.big-feature
+{
+  width:100%;
+  height:550px;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:5%;
+}
+.big-feature > div
+{
+  width:33.3%;
+  height:50%;
+}
+.fea-head
+{
+  color:white;
+  font-size:20px;
+}
+.fea-desc
+{
+  color:white;
+  padding:0px 20px
+}
+.img-gal
+{
+  width:100%;
+  height:500px;
+  background:url(http://pixel-mafia.com/demo/html-templates/vincent/img/19.jpg) no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+      
+}
+.img-gal-flex
+{
+  width:1275px;
+  height:500px;
+  position:absolute;
+  background:rgba(245, 196, 19,0.8);
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.img-head
+{
+  color:#dce4e8;
+  text-align:center;
+  font-size:44px;
+}
+.img-gal-flex > div
+{
+  width:15%;
+  height:35%;
+  margin:3% 3% 0% 3%;
+}
+.keep-in{
+  width:100%;
+  height:400px;
+}
+#subs{
+  color:white;
+  text-align:center;
+  margin-top:5%;
+}
+.submit{
+  width:50%;
+  height:15%;
+  border:1px solid grey;
+  margin:5% auto auto auto;
+}
+.email{
+  color:white;
+  background-color:transparent;
+  width:80%;
+  height:100%;
+  border:0px;
+  padding-left:2%;
+}
+.submit-button{
+  width:15%;
+  height:100%;
+  background-color:#2e2e2e;
+  color:white;
+  border:0;
+  margin-left:4.3%;
+}
+input[type=submit]:hover{
+  background-color:#ffbb00;
+  color:black;
+  transition-duration:0.5s;
+  animation-name: wob-skew;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+@keyframes wob-skew{
+  15%{
+    transform: skewX(22deg);
+  }
+  60%{
+    transform: skewX(-24deg);
+  }
+  100%{
+    transform: skewX(0deg);
+  }
+}
+.contact{
+  color:white;
+  text-align:center;
+  margin-top:3%;
+  font-size:120%;
+}
+#soc{
+  margin-left:2%;
+}
+.p-rel{
+  color:#f5c413;
+  text-align:center;
+  margin-top:80%;
+}
+.rel-name{
+  color:white;
+  text-align:center;
+}
+
+
+    </style>
+
+</head>
+  <body>
+    <div class="pizza-main">
+      <div class="pizza-top-flex">
+        <div style="padding-top:10%">
+          <i class='fas fa-mobile-alt' style="font-size:48px;color:#ffbb00;float:left"></i>
+          <div class="ph">+1 215 456 15 15<br>
+            <span style="color:grey;font-size:90%">8:00 am – 11:30 pm</span>
+          </div>
+        </div>
+        <div><img src="http://pixel-mafia.com/demo/html-templates/vincent/img/logo.png" width="100%" height="100%"></div>
+        <div style="padding-top:10%">
+          <div class="cart"></div>
+          <a href="menu.html"><i class="fab fa-opencart" style="font-size:36px;color:#ffbb00;float:right"></i>
+        </a></div>
+      </div>
+      <ul>
+        <li style="margin-left:28%;"><a href="index.html" class="main-link">Home</a></li>
+        <li><a href="menu.html" class="main-link">Menu</a></li>
+        <li><a href="detail.html" class="main-link">Shop</a></li>
+        <li><a href="contact.html" class="main-link">Contact</a></li>
+        <li><a href="about.html" class="main-link">About</a></li>
+      </ul>
+      <div class="page-head">
+        <div class="pg-head">
+          <h1>About Our Pizzeria</h1>
+        </div>
+      </div>
+      <div class="philos-flex">
+        <div style="background:#000000 url(http://pixel-mafia.com/demo/html-templates/vincent/img/16.jpg) no-repeat center;"></div>
+        <div>
+          <center>
+            <p class="philo-head">Our Philosophy</p>
+            <p class="all-cap-philo">we don’t just make pizza. We make people’s days. Vincent Pizzeria was built on the belief that pizza should be special.</p>
+            <div class="hr"></div>
+            <p class="para">
+              With more than 50 years of experience under our belts, we understand how to best serve our customers through tried and true service principles. Instead of following trends, we set them. We create food we’re proud to serve and deliver it fast.
+            </p>
+          </center>
+        </div>
+        <div style="background:#000000 url(http://pixel-mafia.com/demo/html-templates/vincent/img/18.jpg) no-repeat center;"></div>
+      </div>
+      <div class="big-feature">
+        <div style="background-image:url(http://pixel-mafia.com/demo/html-templates/vincent/img/img_1advant.jpg);background-size:cover"></div>
+        <div style="background-color:#1d2326">
+          <center>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/icon_6.png">
+            <p class="fea-head">Quality Foods</p>
+            <p class="fea-desc">Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+          </center>
+        </div>
+        <div style="background-image:url(http://pixel-mafia.com/demo/html-templates/vincent/img/21.jpg);background-size:cover"></div>
+        <div style="background-color:#1d2326">
+          <center>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/icon_5.png">
+            <p class="fea-head">Original Recipes</p>
+            <p class="fea-desc">Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+          </center>
+        </div>
+        <div style="background-image:url(http://pixel-mafia.com/demo/html-templates/vincent/img/19.jpg);background-size:cover"></div>
+        <div style="background-color:#1d2326">
+          <center>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/icon_4.png">
+            <p class="fea-head">Fastest Delivery</p>
+            <p class="fea-desc">Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+          </center>
+        </div>
+      </div>
+      <h1 class="img-head">Image Gallery</h1>
+      <div class="img-gal">
+        <div class="img-gal-flex">
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/gal_1.jpg" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/gal_3.jpg" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/gal_2.jpg" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/gal_4.jpg" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/gal_5.jpg" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/gal_6.jpg" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/gal_7.jpg" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="http://pixel-mafia.com/demo/html-templates/vincent/img/gal_8.jpg" width="100%" height="100%">
+          </div>
+        </div>
+      </div>
+      <div class="keep-in">
+            <h1 id="subs">Subcribe our Vincent Pizza</h1>
+            <div class="submit">
+                <input type="text" placeholder="Email Address" class="email" id="subs_email">
+                <input type="submit" value="Submit" class="submit-button" onclick="subscribe()"> </div>
+            <p class="contact">+1 215 456 15 15.<span style="color:grey;"> 8:00 am – 11:30 pm</span></p>
+            <p class="contact"><a href=""><i class='fab fa-facebook-f' style='font-
+size:24px;color:grey;'></i></a> <a href="" id="soc"><i class='fab fa-twitter'
+style='font-size:24px;color:grey;'></i> </a> <a href="" id="soc"><i class='fab
+fa-instagram' style='font-size:24px;color:grey;'></i> </a> </p>
+            <p style="color:grey;text-align:center;">Copyrights @2018 Vincent.</p>
+        </div>
+    </div>
+        <script type="text/javascript" charset="utf-8">
+        function subscribe(){
+        let sub_email= document.getElementById("subs_email").value;
+        if(sub_email==="")
+        {
+            alert("Enter your correct email address");
+        }
+        else
+        {
+            alert('Thanks for your Subcription');
+        }
+        }
+    </script>
+  </body>
+</html>
