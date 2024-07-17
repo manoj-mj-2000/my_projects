@@ -7,26 +7,26 @@ Following is the example JSON that can be used to converted into tables.
         "name": "Egmore Library",
         "foundingDate": "20-02-1885",
         "members": [
-            {
-                "memberID": 12,
-                "person_name": "Ari",
-                "person_age": "21"
-            }
-        ],
+		{
+			"memberID": 12,
+			"person_name": "Ari",
+			"person_age": "21"
+		}
+	],
         "books": [
-            {
+	{
                 "name": "Tirukural",
                 "author": "Valluvar",
                 "numberOfCopiesAvailable": "20",
                 "takenBy": ["ref('member.12')"]
-         },
-
-	     {
-		        "name": "Purananooru",
-            "author": "none",
-            "numberOfCopiesAvailable": "10",
-        	  "takenBy":   []
-	      }
+	},
+	{
+		"name": "Purananooru",
+		"author": "none",
+		"numberOfCopiesAvailable": "10",
+		"takenBy":   []
+	}
         ]
     }
 }
+
