@@ -1,5 +1,5 @@
 This Folder contains the code for a simple webapp, that will be used converted JSON file into tables and columns.
-Here I used Node JS for the backend, PSQL for the Database. You can refer attached images for the output.
+Here I used Node JS for the backend, PSQL for the Database. 
 Following is the example JSON that can be used to converted into tables.
 
 {
