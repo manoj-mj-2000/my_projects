@@ -1,7 +1,8 @@
 const { tableExists, createTableInDB } = require("./db");
+const { setGlobalValue, setGlobalTableName } = require('./globalStore');
 
 function parseJSON(jsonStr){
-    // console.log("In parse function"+jsonStr);
+    // console.log("In parse function");
     try{
         var jsonData = JSON.parse(jsonStr);
 
@@ -9,11 +10,12 @@ function parseJSON(jsonStr){
         iterateKeys(keys, jsonData);
         return "success";
     } catch(error){
-        console.log("parsing json error");
+        console.log("parsing json error ", error);
     }
     return "failed";
 }
 function iterateKeys(keys, jsonData){
+    // console.log('In iterate keys functions');
     try{
         keys.forEach(key => {
             if(Array.isArray(jsonData[key])){
@@ -36,7 +38,7 @@ function iterateKeys(keys, jsonData){
 
 async function tableChecking(key, json){
     try{
-        console.log("table checking: "+key);
+        // console.log("table checking: "+key);
         const exists = await tableExists(key);
         if(!exists && json !== null){
             createTable(key, json);
@@ -51,15 +53,34 @@ async function tableChecking(key, json){
 async function createTable(tableName, json){
     var cols = new Set();
     var types = [];
+    // console.log(`Table creation for ${tableName}`);
     var tableQuery = "CREATE TABLE IF NOT EXISTS "+tableName+" ( id int primary key,";
-    if(Array.isArray(json)) {
-        json.forEach(jobj => {
-            var jkeys = Object.keys(jobj);
-            jkeys.forEach(key => {
-                if(Array.isArray(jobj[key]) && jobj[key].length > 0){
-                    // console.log(":TableName:"+tableName+"::String value:"+JSON.stringify(jobj[key]));
-                    // setGlobalValue(tableName, jobj[key]);
-                } else {
+    try {
+        if(Array.isArray(json)) {
+            json.forEach(jobj => {
+                var jkeys = Object.keys(jobj);
+                jkeys.forEach(key => {
+                    if(key === 'takenBy' && jobj[key].length >=0 ){
+                        setGlobalValue(jobj[key]);
+                        setGlobalTableName(tableName);
+                        console.log("Print after setting global "+JSON.stringify(json));
+                    } else {
+                        if(!cols.has(key)){
+                            cols.add(key);
+                            var dataType = "varchar";
+                            if(typeof jobj[key] === 'number'){
+                                dataType = 'int';
+                            }
+                            types.push(dataType);
+                        }
+                    }
+                });
+            });
+        } else if(typeof json[tableName] == 'object' && json[tableName] != null) {
+            var jobj = json[tableName];
+            var keys = Object.keys(jobj);
+            keys.forEach(key =>{
+                if(!Array.isArray(jobj[key])){
                     if(!cols.has(key)){
                         cols.add(key);
                         var dataType = "varchar";
@@ -70,41 +91,25 @@ async function createTable(tableName, json){
                     }
                 }
             });
-        });
-    } else if(typeof json[tableName] == 'object' && json[tableName] != null) {
-        var jobj = json[tableName];
-        var keys = Object.keys(jobj);
-        keys.forEach(key =>{
-            if(!Array.isArray(jobj[key])){
-                if(!cols.has(key)){
-                    cols.add(key);
-                    var dataType = "varchar";
-                    if(typeof jobj[key] === 'number'){
-                        dataType = 'int';
-                    }
-                    types.push(dataType);
-                }
-            }
-        });
-    }
-    let size = cols.size;
-    var i=0;
-    var values = cols.values();
-    for(var val of values){
-        tableQuery += val +" "+ types[i];
-        if(i !== cols.size-1){
-            tableQuery += ',';
         }
-        i++;
+        let size = cols.size;
+        var i=0;
+        var values = cols.values();
+        for(var val of values){
+            tableQuery += val +" "+ types[i];
+            if(i !== cols.size-1){
+                tableQuery += ',';
+            }
+            i++;
+        }
+        tableQuery += ')';
+        createTableInDB(tableQuery);
+    } catch(err){ 
+        console.log("Error in create table", err);
     }
-    tableQuery += ')';
-    createTableInDB(tableQuery);
 }
 
-/*async function checkForLookup(){
-    console.log("Check for lookup");
-    console.log(getGlobalValueTable());
-    console.log(getGlobalValueJson());
+async function checkForLookup(primayTable, jsonArr){
     if(typeof jsonArr[0] === 'string'){
         var inputString = jsonArr[0];
         var match = inputString.match(/'([^']+)'/);
@@ -123,10 +128,16 @@ async function createTable(tableName, json){
             tableQuery += fkTab +" int,";
         }
         tableQuery += "CONSTRAINT fk1 FOREIGN KEY("+primayTable+") REFERENCES "+primayTable+"(id),";
-        tableQuery += "CONSTRAINT fk2 FOREIGN KEY("+fkTab+") REFERENCES "+fkTab+"(id))";
-        console.log(tableQuery);
+        tableQuery += "CONSTRAINT fk2 FOREIGN KEY("+fkTab+") REFERENCES "+fkTab+"s(id))";
+        try{
+            createTableInDB(tableQuery);
+            return true;
+        }
+        catch(err){
+            console.log(err);
+            return false;
+        }
     }
-    console.log("checkForLookupEnds");
-}*/
+}
 
-module.exports = { parseJSON }; 
+module.exports = { parseJSON, checkForLookup }; 
