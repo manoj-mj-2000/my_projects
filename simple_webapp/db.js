@@ -36,7 +36,7 @@ async function createTableInDB(createTableQuery){
     try{
       // console.log(createTableQuery);
       const res = await client.query(createTableQuery);
-      // console.log(`Table created successfully`);
+      // console.log(`Table created successfully ${createTableQuery}`);
       return "success";
     }
     catch(error){
